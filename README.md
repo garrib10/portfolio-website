@@ -1,6 +1,9 @@
 # portfolio-website
 
-![](https://img.shields.io/badge/Dependencies-HTML-orange)![](https://img.shields.io/badge/CSS-blue)![](https://img.shields.io/badge/Javascript-yellow)
+![Dependencies: HTML](https://img.shields.io/badge/Dependencies-HTML-orange)
+![CSS](https://img.shields.io/badge/CSS-blue)
+![JavaScript](https://img.shields.io/badge/Javascript-yellow)
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
 This is my personal Portfolio Website
 
