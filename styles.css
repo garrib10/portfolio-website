@@ -240,6 +240,18 @@ footer {
   transform: scale(1.2);
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
 }
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* space between label and input */
+  margin-bottom: 1rem; /* spacing between rows */
+}
+
+.form-row label {
+  width: 80px;
+  flex-shrink: 0; /* keep label from shrinking */
+  margin-bottom: 0; /* remove margin if any from previous rule */
+}
 
 /* Responsive Media Queries */
 
