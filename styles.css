@@ -242,15 +242,22 @@ footer {
 }
 .form-row {
   display: flex;
-  align-items: center;
-  gap: 10px; /* space between label and input */
-  margin-bottom: 1rem; /* spacing between rows */
+  align-items: flex-start;
+  margin-bottom: 1rem;
 }
 
 .form-row label {
   width: 80px;
-  flex-shrink: 0; /* keep label from shrinking */
-  margin-bottom: 0; /* remove margin if any from previous rule */
+  margin-right: 10px; /* fine-tuned spacing between label and input */
+}
+
+.form-row input,
+.form-row textarea {
+  flex: 1;
+}
+
+form > div:not(.form-row) {
+  margin-bottom: 1rem;
 }
 
 /* Responsive Media Queries */
