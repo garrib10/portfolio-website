@@ -204,10 +204,11 @@ footer {
 }
 
 .contact-form button {
-  padding: 0.6rem 1.2rem;
-  background: #08f;
-  color: #fff;
+  padding: 10px 20px;
+  background-color: #007bff;
   border: none;
+  color: white;
+  font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -242,18 +243,24 @@ footer {
 }
 .form-row {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 1rem;
+  max-width: 600px;
 }
 
 .form-row label {
   width: 80px;
-  margin-right: 10px; /* fine-tuned spacing between label and input */
+  margin-right: 10px;
+  font-weight: bold;
 }
 
 .form-row input,
 .form-row textarea {
   flex: 1;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 form > div:not(.form-row) {
