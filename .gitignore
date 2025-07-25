@@ -2,3 +2,5 @@
 # Ignore the resume file
 *.pdf
 # Ignore the resume file in the resume directory
+assets/profile.png
+# Ignore the profile image in the assets directory
