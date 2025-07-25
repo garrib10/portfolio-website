@@ -184,8 +184,8 @@ footer {
 }
 
 .contact-form {
-  width: 90%;
-  max-width: 500px;
+  width: 80%;
+  max-width: 450px;
 }
 
 .contact-form label {
@@ -209,7 +209,7 @@ footer {
   border: none;
   color: white;
   font-size: 1rem;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -244,13 +244,12 @@ footer {
 .form-row {
   display: flex;
   align-items: center;
+  gap: 10px;
   margin-bottom: 1rem;
-  max-width: 600px;
 }
 
 .form-row label {
-  width: 80px;
-  margin-right: 10px;
+  width: 90px;
   font-weight: bold;
 }
 
@@ -261,6 +260,12 @@ footer {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  max-width: 100%;
+}
+
+.form-row textarea {
+  resize: vertical;
+  height: 100px;
 }
 
 form > div:not(.form-row) {
@@ -268,7 +273,22 @@ form > div:not(.form-row) {
 }
 
 /* Responsive Media Queries */
+/* Small device (mobile) form row fix */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .form-row label {
+    width: auto;
+    margin-bottom: 0.25rem;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
 /* Small devices (phones, less than 600px) */
 @media (max-width: 599px) {
   .hero h1 {

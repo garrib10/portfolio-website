@@ -213,17 +213,35 @@
 
             <div class="form-row">
               <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+              />
             </div>
 
             <div class="form-row">
               <label for="email">Email:</label>
-              <input type="email" id="email" name="_replyto" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
             </div>
 
             <div class="form-row">
               <label for="subject">Subject:</label>
-              <input type="text" id="subject" name="subject" required />
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                autocomplete="off"
+                required
+              />
             </div>
 
             <div class="form-row">
@@ -231,6 +249,7 @@
               <textarea
                 id="message"
                 name="message"
+                autocomplete="off"
                 rows="5"
                 required
               ></textarea>
