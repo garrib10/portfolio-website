@@ -26,8 +26,13 @@ header {
   padding: 4rem 2rem;
   background: url("https://picsum.photos/id/1011/1200/600") center/cover
     no-repeat;
+  background-size: cover;
+  background-position: center;
   color: white;
+  padding: 6rem 1rem;
   text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .hero h1 {
@@ -52,9 +57,9 @@ header {
 }
 
 section {
-  padding: 2rem;
+  padding: 4rem 1rem;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .projects-grid {
@@ -198,6 +203,7 @@ section {
   object-fit: cover;
   border: 3px solid #08f;
   box-shadow: 0 0 10px rgba(0, 136, 255, 0.3);
+  margin-bottom: 1rem;
 }
 
 .about-text {
@@ -238,8 +244,8 @@ section {
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4))
 }
 .dark-mode .about-content {
-  background: white;
-  color: black;
+  color: #f0f0f0
+  color: #121212;
 }
 
 .dark-mode .tech-stack li {
