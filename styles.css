@@ -6,7 +6,7 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background: #f0f0f0;
-  color: #333;
+  color: #1a1a1a;
   transition: background 0.3s, color 0.3s;
   max-width: 1400px;
   margin-left: auto;
@@ -15,7 +15,7 @@ body {
 }
 
 nav {
-  background-color: #08f;
+  background-color: #0056b3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,13 +46,18 @@ nav a:focus {
   outline: none;
 }
 
+nav a.tab-link:focus-visible {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+}
+
 .dark-mode {
   background: #121212;
   color: #f0f0f0;
 }
 
 .toggle-btn {
-  background-color: #08f;
+  background-color: #0056b3;
   color: #ffffff;
   border: none;
   padding: 0.5rem 1rem;
@@ -68,7 +73,7 @@ nav a:focus {
 .toggle-btn:focus,
 .button-group a:focus,
 .contact-form button:focus {
-  outline: 2px solid #08f;
+  outline: 2px solid #0056b3;
   outline-offset: 2px;
 }
 
@@ -84,18 +89,16 @@ header {
 }
 
 .hero {
-  padding: 4rem 2rem;
-  background: url("https://picsum.photos/id/1011/1200/600") center/cover
-    no-repeat;
+  padding: 6rem 1rem;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://picsum.photos/id/1011/1200/600") center/cover no-repeat;
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 6rem 1rem;
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
 }
-
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -123,7 +126,7 @@ section {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   transition: transform 0.3s;
-  color: #333;
+  color: #1a1a1a;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -134,8 +137,9 @@ section {
 }
 
 .dark-mode .project-card {
-  background: white;
-  color: #333;
+  background: #1e1e1e;
+  color: #f0f0f0;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
 }
 
 .project-card h3 {
@@ -161,12 +165,12 @@ section {
   border-radius: 5px;
   text-decoration: none;
   color: white;
-  background-color: #08f;
+  background-color: #0056b3;
   transition: background 0.2s;
 }
 
 .button-group a:hover {
-  background-color: #0070cc;
+  background-color: #004a99;
 }
 
 .tech-icons {
@@ -223,6 +227,11 @@ section {
   padding: 4rem 2rem;
   background-color: var(--bg);
   color: var(--text);
+}
+
+.about-content,
+.project-card {
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-content {
@@ -282,17 +291,22 @@ section {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #08f;
+  background-color: #0056b3;
   cursor: pointer;
   transition: transform 0.2s;
 }
 .tech-stack li:hover {
   transform: scale(1.05);
-  background-color: #0070cc;
+  background-color: #004a99;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
 }
 .dark-mode .about-content {
-  color: #121212;
+  background: #1e1e1e;
+  color: #f0f0f0;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+.dark-mode .about-text {
+  color: #f0f0f0;
 }
 
 .dark-mode .tech-stack li {
@@ -302,7 +316,7 @@ section {
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #08f;
+  background-color: #0056b3;
   color: white;
 }
 
@@ -344,7 +358,7 @@ footer {
 
 .contact-form button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #0056b3;
   border: none;
   color: white;
   font-size: 1rem;
@@ -353,7 +367,7 @@ footer {
 }
 
 .contact-form button:hover {
-  background: #0070cc;
+  background: #004a99;
 }
 
 .resume-icon {
