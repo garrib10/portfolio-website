@@ -1,13 +1,49 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   background: #f0f0f0;
   color: #333;
   transition: background 0.3s, color 0.3s;
-  max-width: 1400px;       /* Prevents ultra-wide stretching */
-  margin-left: auto;       /* Centers body horizontally */
+  max-width: 1400px;
+  margin-left: auto;
   margin-right: auto;
-  padding: 0 1rem;          /* Adds breathing room on mobile */
+  padding: 0 1rem;
+}
+
+nav {
+  background-color: #08f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px 8px 0 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a.tab-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+nav a.tab-link:hover,
+nav a:focus {
+  background-color: rgba(255 255 255 / 0.2);
+  outline: none;
 }
 
 .dark-mode {
@@ -43,17 +79,25 @@ header {
 .hero p {
   font-size: 1.25rem;
 }
-
 .toggle-btn {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  background: #333;
-  color: white;
+  background-color: #08f;
+  color: #ffffff;
   border: none;
   padding: 0.5rem 1rem;
+  border-radius: 8px;
   cursor: pointer;
-  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: rgba(255 255 255 / 0.2);
+}
+
+.toggle-btn:focus,
+.button-group a:focus,
+.contact-form button:focus {
+  outline: 2px solid #08f;
+  outline-offset: 2px;
 }
 
 section {
@@ -195,7 +239,6 @@ section {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-
 .profile-pic {
   width: 180px;
   height: 180px;
@@ -233,25 +276,23 @@ section {
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #08f;
   cursor: pointer;
-  transition: transform 0.2s; 
+  transition: transform 0.2s;
 }
 .tech-stack li:hover {
   transform: scale(1.05);
   background-color: #0070cc;
-  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4))
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.4));
 }
 .dark-mode .about-content {
-  color: #f0f0f0
   color: #121212;
 }
 
 .dark-mode .tech-stack li {
-  color: #08f:
+  color: #f0f0f0;
 }
-
 
 footer {
   text-align: center;
@@ -289,7 +330,7 @@ footer {
 .contact-form textarea {
   width: 100%;
   padding: 0.5rem;
-  padding-left: .5rem
+  padding-left: 0.5rem;
   margin-bottom: 1rem;
   border-radius: 4px;
   border: 1px solid #ccc;
@@ -364,7 +405,6 @@ footer {
 form > div:not(.form-row) {
   margin-bottom: 1rem;
 }
-
 
 /* ===========================
    Responsive Media Queries
@@ -447,4 +487,3 @@ form > div:not(.form-row) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/* Extra large devices (desktops, 1200px and up) */
