@@ -24,3 +24,7 @@ The website highlights:
 - JavaScript (vanilla for interactivity)
 - Font Awesome icons
 - Formspree for form handling
+
+## 🔒 Security Considerations
+
+This site is hosted via GitHub Pages, which has limitations for setting certain HTTP security headers (CSP, HSTS preload, COOP, X-Frame-Options). If migrated to a custom server (e.g., Vercel or Netlify), these will be added via headers configuration.

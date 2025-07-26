@@ -51,6 +51,31 @@ nav a:focus {
   color: #f0f0f0;
 }
 
+.toggle-btn {
+  background-color: #08f;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: rgba(255 255 255 / 0.2);
+}
+
+.toggle-btn:focus,
+.button-group a:focus,
+.contact-form button:focus {
+  outline: 2px solid #08f;
+  outline-offset: 2px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
 header {
   padding: 2rem;
   text-align: center;
@@ -78,26 +103,6 @@ header {
 
 .hero p {
   font-size: 1.25rem;
-}
-.toggle-btn {
-  background-color: #08f;
-  color: #ffffff;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.toggle-btn:hover {
-  background-color: rgba(255 255 255 / 0.2);
-}
-
-.toggle-btn:focus,
-.button-group a:focus,
-.contact-form button:focus {
-  outline: 2px solid #08f;
-  outline-offset: 2px;
 }
 
 section {
