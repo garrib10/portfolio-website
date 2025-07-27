@@ -92,16 +92,18 @@ header h1 {
 .hero {
   padding: 6rem 1rem;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://picsum.photos/id/1011/1200/600") center/cover no-repeat;
-  background-size: cover;
-  background-position: center;
+    url("assets/images/hero-image-optimized.webp") center/cover no-repeat;
   color: white;
   text-align: center;
   max-width: 800px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
@@ -487,6 +489,9 @@ form > div:not(.form-row) {
 
   .contact-form button {
     width: 100%;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
   }
 }
 
