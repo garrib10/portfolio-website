@@ -88,20 +88,6 @@ header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
-
-.hero {
-  padding: 6rem 1rem;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/images/hero-image-optimized.webp") center/cover no-repeat;
-  color: white;
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -204,7 +190,7 @@ section {
 }
 
 .tech-icons .fa-bootstrap {
-  color: #7952b3; /* Bootstrap Purple */
+  color: #7952b3;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -428,11 +414,6 @@ form > div:not(.form-row) {
   margin-bottom: 1rem;
 }
 
-/* ===========================
-   Responsive Media Queries
-   =========================== */
-
-/* Extra small devices (phones <600px) */
 @media (max-width: 599px) {
   .hero h1 {
     font-size: 2rem;
@@ -457,7 +438,7 @@ form > div:not(.form-row) {
   }
 
   .projects-grid {
-    grid-template-columns: 1fr; /* single column */
+    grid-template-columns: 1fr;
   }
 
   header {
@@ -475,7 +456,6 @@ form > div:not(.form-row) {
   }
 }
 
-/* Small device (mobile) form row fix (<600px) */
 @media (max-width: 600px) {
   .form-row {
     flex-direction: column;
@@ -495,7 +475,6 @@ form > div:not(.form-row) {
   }
 }
 
-/* Medium devices (tablets, 600px to 899px) */
 @media (min-width: 600px) and (max-width: 899px) {
   .hero h1 {
     font-size: 2.5rem;
@@ -506,7 +485,6 @@ form > div:not(.form-row) {
   }
 }
 
-/* Large devices (900px to 1199px) */
 @media (min-width: 900px) and (max-width: 1199px) {
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
