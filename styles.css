@@ -88,6 +88,33 @@ header h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
+
+.hero {
+  background-image: url("assets/images/hero-fireworks.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white; /* adjust for contrast */
+  padding: 6rem 2rem;
+  text-align: center;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
+}
 .hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
