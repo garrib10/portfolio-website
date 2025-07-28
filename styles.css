@@ -13,7 +13,11 @@ body {
   margin-right: auto;
   padding: 0 1rem;
 }
-
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 nav {
   background-color: #0056b3;
   display: flex;
