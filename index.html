@@ -3,157 +3,280 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brian Garrity - Portfolio</title>
+
+    <title>Brian Garrity | Full-Stack Software Engineer</title>
+
     <meta
       name="description"
-      content="Brian Garrity – Full Stack Software Engineer with expertise in Java, SQL, AWS, and modern AI tools."
+      content="Brian Garrity is a full-stack software engineer with experience in Java, Spring Boot, React, TypeScript, Python, SQL, AWS, and automated testing."
     />
+
     <meta property="og:title" content="Brian Garrity – Portfolio" />
+
     <meta
       property="og:description"
-      content="Full Stack Software Engineer with 2+ years of experience at a top U.S. bank."
+      content="Full-stack software engineer with over two years of professional experience building web applications, integrations, notification systems, and automated tests."
     />
+
     <meta
       property="og:image"
-      content="https://garrib10.github.io/portfolio-website/assets/profile.png"
+      content="https://garrib10.github.io/portfolio-website/assets/profile.webp"
     />
+
     <meta
       property="og:url"
       content="https://garrib10.github.io/portfolio-website/"
     />
+
     <meta property="og:type" content="website" />
-    <link
-      rel="icon"
-      href="assets/icons/favicon.ico"
-      type="image/x-icon"
-      alt="BG logo"
-    />
-    <meta name="theme-color" content="#08f" />
-    <meta name="msapplication-TileColor" content="#08f" />
+
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+
+    <meta name="theme-color" content="#075985" />
+    <meta name="msapplication-TileColor" content="#075985" />
+
     <link rel="preload" as="image" href="assets/images/hero-fireworks.webp" />
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <nav>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#home" class="nav-brand">BG</a>
+
       <div class="nav-links">
         <a href="#home" class="tab-link">Home</a>
-        <a href="#professional-projects" class="tab-link"
-          >Professional Projects</a
-        >
-        <a href="#bootcamp-projects" class="tab-link">Bootcamp Projects</a>
-        <a href="#about" class="tab-link">About Me</a>
+        <a href="#projects" class="tab-link">Projects</a>
+        <a href="#experience" class="tab-link">Experience</a>
+        <a href="#about" class="tab-link">About</a>
         <a href="#contact" class="tab-link">Contact</a>
+        <a
+          href="resume/Brian Garrity's Resume.pdf"
+          class="tab-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
       </div>
-      <button class="toggle-btn" onclick="toggleDarkMode()">Toggle Mode</button>
-    </nav>
-    <main>
-      <header>
-        <h1>Brian Garrity</h1>
-        <p>Software Developer | Full Stack | AI Enthusiast</p>
-      </header>
 
+      <button class="toggle-btn" type="button" aria-label="Switch to dark mode">
+        <i class="fas fa-moon" aria-hidden="true"></i>
+        <span>Dark Mode</span>
+      </button>
+    </nav>
+
+    <main>
       <section id="home" class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>
-          Building innovative solutions through code, one project at a time.
-        </p>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="section-eyebrow hero-eyebrow">
+            Full-Stack Software Engineer
+          </p>
+
+          <h1>
+            Building thoughtful software
+            <span>from frontend to backend.</span>
+          </h1>
+
+          <p class="hero-summary">
+            I’m Brian Garrity, a software engineer with over two years of
+            professional experience building integrations, notification systems,
+            automated tests, and maintainable web applications.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="button button-primary"> View My Work </a>
+
+            <a href="#contact" class="button button-secondary"> Contact Me </a>
+          </div>
+        </div>
       </section>
 
-      <section id="professional-projects">
-        <h2>Professional Projects</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <h3>TaskFlow</h3>
+      <section class="highlights-section" aria-label="Professional highlights">
+        <div class="highlights-grid">
+          <div class="highlight-item">
+            <strong>2+ Years</strong>
+            <span>Professional Experience</span>
+          </div>
+
+          <div class="highlight-item">
+            <strong>2 AWS</strong>
+            <span>Certifications</span>
+          </div>
+
+          <div class="highlight-item">
+            <strong>v1.2.0</strong>
+            <span>TaskFlow Released</span>
+          </div>
+
+          <div class="highlight-item">
+            <strong>Full Stack</strong>
+            <span>Frontend, Backend & Testing</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-heading">
+          <p class="section-eyebrow">Selected Work</p>
+          <h2>Featured Project</h2>
+          <p>
+            A current project demonstrating modern frontend architecture,
+            TypeScript domain modeling, workflow rules, accessibility, and
+            production deployment.
+          </p>
+        </div>
+
+        <article class="featured-project">
+          <div class="featured-project-image">
             <img
               src="assets/images/Taskflow.png"
               alt="Screenshot of the TaskFlow Kanban board showing drag-and-drop task management"
-              width="274"
-              height="155"
               class="project-img"
             />
+          </div>
+
+          <div class="featured-project-content">
+            <p class="project-label">Featured Project</p>
+            <h3>TaskFlow</h3>
+
             <p>
               A rule-based Kanban board built with React, TypeScript, and Vite
               featuring drag-and-drop workflow management, search and filtering,
               subtasks, workflow validation, custom confirmation dialogs,
               keyboard accessibility, and LocalStorage persistence.
             </p>
-            <div class="button-group">
-              <a href="https://taskflow-garrib10.vercel.app/" target="_blank"
-                >Live Demo</a
-              >
-              <a href="https://github.com/garrib10/taskflow" target="_blank"
-                >GitHub</a
-              >
+
+            <ul class="project-highlights">
+              <li>Four-stage rule-based workflow</li>
+              <li>Search and multi-filtering</li>
+              <li>Subtask checklist management</li>
+              <li>Custom confirmation and notification systems</li>
+              <li>Responsive and keyboard-accessible interface</li>
+            </ul>
+
+            <div class="project-tags" aria-label="TaskFlow technologies">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Vite</span>
+              <span>CSS</span>
+              <span>@dnd-kit</span>
             </div>
-            <div class="tech-icons">
+
+            <div class="button-group">
+              <a
+                href="https://taskflow-garrib10.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i
+                  class="fas fa-arrow-up-right-from-square"
+                  aria-hidden="true"
+                ></i>
+                Live Demo
+              </a>
+
+              <a
+                href="https://github.com/garrib10/taskflow"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="secondary-project-button"
+              >
+                <i class="fab fa-github" aria-hidden="true"></i>
+                GitHub
+              </a>
+            </div>
+
+            <div class="tech-icons" aria-label="TaskFlow technology logos">
               <i class="fab fa-react" title="React" aria-label="React"></i>
 
-              <span class="tech-icon-background">
-                <img
-                  src="assets/logos/typescript.svg"
-                  alt="TypeScript logo"
-                  title="TypeScript"
-                  class="tech-icon-img"
-                />
-              </span>
+              <img
+                src="assets/logos/typescript.svg"
+                alt="TypeScript logo"
+                title="TypeScript"
+                class="tech-icon-img"
+              />
 
-              <span class="tech-icon-background vite-icon">
-                <img
-                  src="assets/logos/vite.svg"
-                  alt="Vite logo"
-                  title="Vite"
-                  class="tech-icon-img"
-                />
-              </span>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
+              <img
+                src="assets/logos/vite.svg"
+                alt="Vite logo"
+                title="Vite"
+                class="tech-icon-img"
+              />
+
+              <i class="fab fa-css3-alt" title="CSS3" aria-label="CSS3"></i>
             </div>
           </div>
-        </div>
+        </article>
       </section>
 
-      <section id="bootcamp-projects">
-        <h2>Bootcamp Projects</h2>
+      <section id="earlier-projects">
+        <div class="section-heading">
+          <p class="section-eyebrow">Earlier Work</p>
+          <h2>Bootcamp Projects</h2>
+          <p>
+            Earlier projects that helped establish my foundation in frontend
+            development, APIs, browser storage, and JavaScript.
+          </p>
+        </div>
+
         <div class="projects-grid">
-          <div class="project-card">
+          <article class="project-card">
             <h3>Box-Office Media</h3>
+
             <img
               src="assets/images/Box-Office-Media.webp"
               alt="Screenshot of Box-Office Media movie search app with movie posters and details"
               width="284"
               height="155"
               class="project-img"
+              loading="lazy"
             />
+
             <p>
               A movie search application that uses APIs to display results with
               user interaction features. Built using HTML, CSS, JavaScript,
               jQuery, and the Foundation framework.
             </p>
+
             <div class="button-group">
               <a
                 href="https://0216johnsoneric.github.io/Boxoffice-Movies/"
                 target="_blank"
-                >Live Demo</a
+                rel="noopener noreferrer"
               >
+                Live Demo
+              </a>
+
               <a
                 href="https://github.com/0216johnsoneric/Boxoffice-Movies"
                 target="_blank"
-                >GitHub</a
+                rel="noopener noreferrer"
+                class="secondary-project-button"
               >
+                GitHub
+              </a>
             </div>
+
             <div class="tech-icons">
               <i class="fab fa-html5" title="HTML5"></i>
               <i class="fab fa-css3-alt" title="CSS3"></i>
               <i class="fab fa-js-square" title="JavaScript"></i>
+
               <img
                 src="assets/logos/jquery.svg"
                 alt="jQuery logo"
@@ -161,82 +284,150 @@
                 class="tech-icon-img"
               />
             </div>
-          </div>
+          </article>
 
-          <div class="project-card">
+          <article class="project-card">
             <h3>Code Quiz</h3>
+
             <img
               src="assets/images/Code-Quiz.webp"
               alt="Screenshot of JavaScript Code Quiz app with multiple choice interface"
               width="274"
               height="155"
               class="project-img"
+              loading="lazy"
             />
+
             <p>
-              Interactive quiz web app testing basic JavaScript knowledge with a
-              timer and score saving. Built using HTML, CSS, JavaScript, and the
-              Bootstrap framework.
+              An interactive quiz application that tests basic JavaScript
+              knowledge with a timer and local score storage. Built using HTML,
+              CSS, JavaScript, and Bootstrap.
             </p>
+
             <div class="button-group">
-              <a href="https://garrib10.github.io/Code-Quiz/" target="_blank"
-                >Live Demo</a
+              <a
+                href="https://garrib10.github.io/Code-Quiz/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-              <a href="https://github.com/garrib10/Code-Quiz" target="_blank"
-                >GitHub</a
+                Live Demo
+              </a>
+
+              <a
+                href="https://github.com/garrib10/Code-Quiz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="secondary-project-button"
               >
+                GitHub
+              </a>
             </div>
+
             <div class="tech-icons">
               <i class="fab fa-html5" title="HTML5"></i>
               <i class="fab fa-css3-alt" title="CSS3"></i>
               <i class="fab fa-js-square" title="JavaScript"></i>
               <i class="fab fa-bootstrap" title="Bootstrap"></i>
             </div>
-          </div>
+          </article>
 
-          <div class="project-card">
+          <article class="project-card">
             <h3>Work Day Scheduler</h3>
+
             <img
               src="assets/images/Work-Day-Scheduler.webp"
               alt="Screenshot of Work Day Scheduler showing hourly tasks and color-coded time blocks"
               width="292"
               height="155"
               class="project-img"
+              loading="lazy"
             />
+
             <p>
-              Simple calendar app that saves tasks for each hour of the workday
-              using local storage.Built using HTML, CSS, JavaScript, and
-              moment.js.
+              A calendar application that saves tasks for each hour of the
+              workday using LocalStorage. Built with HTML, CSS, JavaScript, and
+              Moment.js.
             </p>
+
             <div class="button-group">
               <a
                 href="https://garrib10.github.io/Work-Day-Scheduler/"
                 target="_blank"
-                >Live Demo</a
+                rel="noopener noreferrer"
               >
+                Live Demo
+              </a>
+
               <a
                 href="https://github.com/garrib10/Work-Day-Scheduler"
                 target="_blank"
-                >GitHub</a
+                rel="noopener noreferrer"
+                class="secondary-project-button"
               >
+                GitHub
+              </a>
             </div>
+
             <div class="tech-icons">
               <i class="fab fa-html5" title="HTML5"></i>
               <i class="fab fa-css3-alt" title="CSS3"></i>
               <i class="fab fa-js-square" title="JavaScript"></i>
+
               <img
                 src="assets/logos/moment.webp"
                 alt="Moment.js logo"
                 title="Moment.js"
-                width="18"
-                height="18"
                 class="tech-icon-img"
               />
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
+      <section id="experience">
+        <div class="section-heading">
+          <p class="section-eyebrow">Professional Background</p>
+          <h2>Experience</h2>
+        </div>
+
+        <article class="experience-card">
+          <div class="experience-header">
+            <div>
+              <p class="experience-role">Software Engineer</p>
+              <h3>JPMorgan Chase & Co.</h3>
+            </div>
+
+            <p class="experience-duration">2+ Years</p>
+          </div>
+
+          <ul>
+            <li>
+              Contributed to PayPal and Venmo integrations for commercial
+              payment platforms.
+            </li>
+            <li>Built custom SMS and email notification functionality.</li>
+            <li>
+              Improved automated testing workflows using Selenium, JUnit,
+              Postman, and Swagger.
+            </li>
+            <li>
+              Collaborated with engineers, product partners, and stakeholders
+              across Agile teams.
+            </li>
+            <li>
+              Supported maintainable application development through code
+              reviews, testing, and continuous integration practices.
+            </li>
+          </ul>
+        </article>
+      </section>
+
       <section id="about" class="about-section">
+        <div class="section-heading">
+          <p class="section-eyebrow">About Me</p>
+          <h2>Developer, Problem Solver & Continuous Learner</h2>
+        </div>
+
         <div class="about-content">
           <img
             src="assets/profile.webp"
@@ -246,143 +437,177 @@
             loading="lazy"
             class="profile-pic"
           />
+
           <div class="about-text">
-            <h2>About Me</h2>
             <p>
-              Hi! I’m <strong>Brian Garrity</strong>, a Full Stack Software
-              Engineer with over two years of experience working across agile
+              Hi! I’m <strong>Brian Garrity</strong>, a full-stack software
+              engineer with over two years of experience working across Agile
               teams at a leading U.S. bank. I've contributed to high-impact
               features such as integrating PayPal and Venmo into commercial
               platforms, building custom SMS and email notification systems, and
-              improving automated testing workflows using tools like Selenium,
-              Postman, and Swagger.
+              improving automated testing workflows.
             </p>
+
             <p>
               I'm passionate about building clean, maintainable software and
               solving real-world problems through thoughtful application design.
               I enjoy working across the full stack with Java, TypeScript,
-              Python, React, SQL, AWS, and modern development tools to create
-              scalable applications. I'm also committed to continuous learning
-              and enjoy expanding my skills through personal projects that
-              demonstrate modern software engineering practices.
+              Python, React, SQL, AWS, and modern development tools.
             </p>
+
             <ul class="tech-stack">
               <li>💻 Java (Spring Boot, REST APIs), Python (Flask/FastAPI)</li>
               <li>
-                ⚛️ React, TypeScript, Vite, Bootstrap & Front-End Development
+                ⚛️ React, TypeScript, Vite, Bootstrap & Frontend Development
               </li>
               <li>🗄️ SQL & Relational Databases</li>
-              <li>☁️ AWS Certified (Cloud Practitioner, AI Practitioner )</li>
+              <li>☁️ AWS Certified: Cloud Practitioner & AI Practitioner</li>
               <li>🧪 Selenium, JUnit, Postman, Swagger & Automated Testing</li>
               <li>🔧 Git, GitHub, Vercel & Agile Development</li>
-              <li>🤖 ChatGPT / GitHub Copilot</li>
+              <li>🤖 GitHub Copilot & ChatGPT</li>
             </ul>
           </div>
         </div>
       </section>
+
       <section id="contact">
-        <h2>Contact & Resume</h2>
-        <div class="projects-grid">
-          <div class="project-card contact-card">
+        <div class="section-heading">
+          <p class="section-eyebrow">Connect</p>
+          <h2>Contact & Resume</h2>
+          <p>
+            Have a role, project, or conversation in mind? Send me a message or
+            connect with me through GitHub and LinkedIn.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-details">
+            <h3>Let’s connect</h3>
+
+            <p>
+              I’m currently interested in software engineering opportunities
+              involving Java, React, TypeScript, Python, SQL, cloud platforms,
+              and automated testing.
+            </p>
+
             <div class="social-icons">
               <a
                 href="https://github.com/garrib10"
                 target="_blank"
-                aria-label="GitHub"
-                ><i class="fab fa-github"></i
-              ></a>
+                rel="noopener noreferrer"
+                aria-label="GitHub profile"
+              >
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+
               <a
                 href="https://www.linkedin.com/in/briangarrity26/"
                 target="_blank"
-                aria-label="LinkedIn"
-                ><i class="fab fa-linkedin"></i
-              ></a>
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
+              >
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+
               <a
                 href="resume/Brian Garrity's Resume.pdf"
                 target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View resume"
                 title="View Resume"
-                aria-label="View Resume"
               >
-                <i class="fas fa-file-download resume-icon"></i>
+                <i class="fas fa-file-download" aria-hidden="true"></i>
               </a>
             </div>
-
-            <form
-              action="https://formspree.io/f/xjkoyzon"
-              method="POST"
-              class="contact-form"
-            >
-              <input
-                type="hidden"
-                name="_subject"
-                value="New contact form submission"
-              />
-              <input
-                type="hidden"
-                name="_next"
-                value="https://garrib10.github.io/portfolio-website/"
-              />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_language" value="en" />
-              <input
-                type="hidden"
-                name="_autoresponse"
-                value="Thank you for your message! I will get back to you soon."
-              />
-              <input type="hidden" name="_format" value="plain" />
-
-              <div class="form-row">
-                <label for="name">Name:</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  autocomplete="name"
-                  required
-                />
-              </div>
-
-              <div class="form-row">
-                <label for="email">Email:</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  autocomplete="email"
-                  required
-                />
-              </div>
-
-              <div class="form-row">
-                <label for="subject">Subject:</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  autocomplete="off"
-                  required
-                />
-              </div>
-              <div class="form-row">
-                <label for="message">Message:</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  autocomplete="off"
-                  rows="5"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit">Send</button>
-            </form>
           </div>
+
+          <form
+            action="https://formspree.io/f/xjkoyzon"
+            method="POST"
+            class="contact-form"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New contact form submission"
+            />
+
+            <input
+              type="hidden"
+              name="_next"
+              value="https://garrib10.github.io/portfolio-website/"
+            />
+
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_language" value="en" />
+
+            <input
+              type="hidden"
+              name="_autoresponse"
+              value="Thank you for your message! I will get back to you soon."
+            />
+
+            <input type="hidden" name="_format" value="plain" />
+
+            <div class="form-field">
+              <label for="name">Name</label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email</label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="subject">Subject</label>
+
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                autocomplete="off"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+
+              <textarea
+                id="message"
+                name="message"
+                autocomplete="off"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+          </form>
         </div>
       </section>
     </main>
+
     <footer>
-      <p>&copy; 2026 Brian Garrity</p>
+      <p>&copy; 2026 Brian Garrity. Built and maintained with care.</p>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
   </body>
