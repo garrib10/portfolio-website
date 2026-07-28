@@ -7,7 +7,9 @@ body {
   font-family: "Poppins", sans-serif;
   background: #f0f0f0;
   color: #1a1a1a;
-  transition: background 0.3s, color 0.3s;
+  transition:
+    background 0.3s,
+    color 0.3s;
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
@@ -194,15 +196,16 @@ section {
 
 .tech-icons {
   display: flex;
-  gap: 10px;
-  font-size: 1.3rem;
-  justify-content: flex-start;
-  margin-top: 0.25rem;
   align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 0.25rem;
+  font-size: 1.3rem;
 }
 
 .tech-icons i {
-  transition: transform 0.2s;
+  font-size: 1.5rem;
+  transition: transform 0.2s ease;
   cursor: default;
 }
 
@@ -224,9 +227,26 @@ section {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
+.tech-icons .fa-react {
+  color: #61dafb;
+}
+
+.tech-icons .fa-css3-alt {
+  color: #1572b6;
+}
+
+.tech-icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
+
 .tech-icons img {
   cursor: default;
-  transition: transform 0.2s, filter 0.2s;
+  transition:
+    transform 0.2s,
+    filter 0.2s;
   vertical-align: middle;
   width: 24px;
   height: 24px;
@@ -250,7 +270,10 @@ section {
 
 .about-content,
 .project-card {
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .about-content {
@@ -404,7 +427,9 @@ footer {
   height: 18px;
   filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
   cursor: default;
-  transition: transform 0.2s, filter 0.2s;
+  transition:
+    transform 0.2s,
+    filter 0.2s;
   vertical-align: middle;
 }
 
