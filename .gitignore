@@ -2,3 +2,4 @@
 # Ignore the resume file
 *.pdf
 # Ignore the resume file in the resume directory
+.DS_Store

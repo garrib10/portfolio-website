@@ -443,10 +443,15 @@ section + section:not(.highlights-section) {
 }
 
 .featured-project-image img {
-  width: 100%;
   aspect-ratio: 16 / 10;
-  object-fit: cover;
+  object-fit: contain;
   transition: transform 0.35s ease;
+}
+
+.featured-projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 }
 
 .featured-project:hover .featured-project-image img {
@@ -548,11 +553,7 @@ section + section:not(.highlights-section) {
 
 .project-img {
   width: 100%;
-  margin-bottom: 1.15rem;
-
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-
+  display: block;
   border: 1px solid var(--border);
   border-radius: 10px;
 }
@@ -666,6 +667,16 @@ section + section:not(.highlights-section) {
 
 body.dark-mode .tech-icons .fa-react {
   color: #61dafb;
+}
+
+.sqlalchemy-icon {
+  background: white;
+  border-radius: 4px;
+  padding: 3px;
+}
+
+.pytest-icon {
+  transform: scale(1.15);
 }
 
 /* ===========================

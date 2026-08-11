@@ -119,8 +119,8 @@
           </div>
 
           <div class="highlight-item">
-            <strong>v1.2.0</strong>
-            <span>TaskFlow Released</span>
+            <strong>2</strong>
+            <span>Featured Projects</span>
           </div>
 
           <div class="highlight-item">
@@ -133,101 +133,222 @@
       <section id="projects">
         <div class="section-heading">
           <p class="section-eyebrow">Selected Work</p>
-          <h2>Featured Project</h2>
+          <h2>Featured Projects</h2>
           <p>
-            A current project demonstrating modern frontend architecture,
-            TypeScript domain modeling, workflow rules, accessibility, and
+            Selected projects demonstrating frontend engineering, backend API
+            development, relational database design, automated testing, and
             production deployment.
           </p>
         </div>
 
-        <article class="featured-project">
-          <div class="featured-project-image">
-            <img
-              src="assets/images/Taskflow.png"
-              alt="Screenshot of the TaskFlow Kanban board showing drag-and-drop task management"
-              class="project-img"
-            />
-          </div>
-
-          <div class="featured-project-content">
-            <p class="project-label">Featured Project</p>
-            <h3>TaskFlow</h3>
-
-            <p>
-              A rule-based Kanban board built with React, TypeScript, and Vite
-              featuring drag-and-drop workflow management, search and filtering,
-              subtasks, workflow validation, custom confirmation dialogs,
-              keyboard accessibility, and LocalStorage persistence.
-            </p>
-
-            <ul class="project-highlights">
-              <li>Four-stage rule-based workflow</li>
-              <li>Search and multi-filtering</li>
-              <li>Subtask checklist management</li>
-              <li>Custom confirmation and notification systems</li>
-              <li>Responsive and keyboard-accessible interface</li>
-            </ul>
-
-            <div class="project-tags" aria-label="TaskFlow technologies">
-              <span>React</span>
-              <span>TypeScript</span>
-              <span>Vite</span>
-              <span>CSS</span>
-              <span>@dnd-kit</span>
-            </div>
-
-            <div class="button-group">
-              <a
-                href="https://taskflow-garrib10.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i
-                  class="fas fa-arrow-up-right-from-square"
-                  aria-hidden="true"
-                ></i>
-                Live Demo
-              </a>
-
-              <a
-                href="https://github.com/garrib10/taskflow"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="secondary-project-button"
-              >
-                <i class="fab fa-github" aria-hidden="true"></i>
-                GitHub
-              </a>
-            </div>
-
-            <div class="tech-icons" aria-label="TaskFlow technology logos">
-              <i class="fab fa-react" title="React" aria-label="React"></i>
-
+        <div class="featured-projects-list">
+          <article class="featured-project">
+            <div class="featured-project-image">
               <img
-                src="assets/logos/typescript.svg"
-                alt="TypeScript logo"
-                title="TypeScript"
-                class="tech-icon-img"
+                src="assets/images/Taskflow.png"
+                alt="Screenshot of the TaskFlow Kanban board showing drag-and-drop task management"
+                class="project-img"
               />
-
-              <img
-                src="assets/logos/vite.svg"
-                alt="Vite logo"
-                title="Vite"
-                class="tech-icon-img"
-              />
-
-              <i class="fab fa-css3-alt" title="CSS3" aria-label="CSS3"></i>
             </div>
-          </div>
-        </article>
+
+            <div class="featured-project-content">
+              <p class="project-label">Frontend Application</p>
+
+              <h3>TaskFlow</h3>
+
+              <p>
+                A rule-based Kanban board built with React, TypeScript, and Vite
+                featuring drag-and-drop workflow management, search and
+                filtering, subtasks, workflow validation, custom confirmation
+                dialogs, keyboard accessibility, and LocalStorage persistence.
+              </p>
+
+              <ul class="project-highlights">
+                <li>Four-stage rule-based workflow</li>
+                <li>Search and multi-filtering</li>
+                <li>Subtask checklist management</li>
+                <li>Custom confirmation and notification systems</li>
+                <li>Responsive and keyboard-accessible interface</li>
+              </ul>
+
+              <div class="project-tags" aria-label="TaskFlow technologies">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Vite</span>
+                <span>CSS</span>
+                <span>@dnd-kit</span>
+              </div>
+
+              <div class="button-group">
+                <a
+                  href="https://taskflow-garrib10.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i
+                    class="fas fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i>
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/garrib10/taskflow"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="secondary-project-button"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+
+              <div class="tech-icons" aria-label="TaskFlow technology logos">
+                <i class="fab fa-react" title="React" aria-label="React"></i>
+
+                <img
+                  src="assets/logos/typescript.svg"
+                  alt="TypeScript logo"
+                  title="TypeScript"
+                  class="tech-icon-img"
+                />
+
+                <img
+                  src="assets/logos/vite.svg"
+                  alt="Vite logo"
+                  title="Vite"
+                  class="tech-icon-img"
+                />
+
+                <i class="fab fa-css3-alt" title="CSS3" aria-label="CSS3"></i>
+              </div>
+            </div>
+          </article>
+
+          <!-- =========================
+         Job Search Manager API
+    ========================== -->
+
+          <article class="featured-project">
+            <div class="featured-project-image">
+              <img
+                src="assets/images/job-search-manager-api.png"
+                alt="Screenshot of the Job Search Manager API Swagger documentation"
+                class="project-img"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="featured-project-content">
+              <p class="project-label">Backend REST API</p>
+
+              <h3>Job Search Manager API</h3>
+
+              <p>
+                A production-ready REST API built with FastAPI, SQLAlchemy, and
+                MySQL for managing companies, job applications, interviews, and
+                secure user authentication. Features layered architecture, JWT
+                authentication, advanced search and filtering, and comprehensive
+                automated testing.
+              </p>
+
+              <ul class="project-highlights">
+                <li>JWT authentication with secure password hashing</li>
+                <li>Company, application, and interview management</li>
+                <li>Search, filtering, sorting, and pagination</li>
+                <li>Layered architecture with SQLAlchemy ORM</li>
+                <li>70 automated tests with 98% code coverage</li>
+              </ul>
+
+              <div
+                class="project-tags"
+                aria-label="Job Search Manager API technologies"
+              >
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>MySQL</span>
+                <span>SQLAlchemy</span>
+                <span>JWT</span>
+                <span>Pytest</span>
+              </div>
+
+              <div class="button-group">
+                <a
+                  href="https://job-search-manager-api-production.up.railway.app/docs"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i
+                    class="fas fa-arrow-up-right-from-square"
+                    aria-hidden="true"
+                  ></i>
+                  Explore API
+                </a>
+
+                <a
+                  href="https://github.com/garrib10/job-search-manager-api"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="secondary-project-button"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+
+              <div
+                class="tech-icons"
+                aria-label="Job Search Manager API technology logos"
+              >
+                <img
+                  src="assets/logos/python.svg"
+                  alt="Python logo"
+                  title="Python"
+                  class="tech-icon-img"
+                />
+
+                <img
+                  src="assets/logos/fastapi.png"
+                  alt="FastAPI logo"
+                  title="FastAPI"
+                  class="tech-icon-img"
+                />
+
+                <img
+                  src="assets/logos/mysql.svg"
+                  alt="MySQL logo"
+                  title="MySQL"
+                  class="tech-icon-img"
+                />
+
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg"
+                  alt="SQLAlchemy logo"
+                  title="SQLAlchemy"
+                  class="tech-icon-img sqlalchemy-icon"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original-wordmark.svg"
+                  alt="Pytest logo"
+                  title="Pytest"
+                  class="tech-icon-img pytest-icon"
+                />
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original.svg"
+                  alt="Railway logo"
+                  title="Railway"
+                  class="tech-icon-img"
+                />
+              </div>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section id="earlier-projects">
         <div class="section-heading">
-          <p class="section-eyebrow">Earlier Work</p>
-          <h2>Bootcamp Projects</h2>
+          <p class="section-eyebrow">Additional Work</p>
+          <h2>Additional Projects</h2>
           <p>
             Earlier projects that helped establish my foundation in frontend
             development, APIs, browser storage, and JavaScript.
@@ -451,20 +572,18 @@
             <p>
               I'm passionate about building clean, maintainable software and
               solving real-world problems through thoughtful application design.
-              I enjoy working across the full stack with Java, TypeScript,
-              Python, React, SQL, AWS, and modern development tools.
+              I enjoy building applications across the full stack using Java,
+              TypeScript, Python, React, SQL, AWS, and modern development tools.
             </p>
 
             <ul class="tech-stack">
               <li>💻 Java (Spring Boot, REST APIs), Python (Flask/FastAPI)</li>
-              <li>
-                ⚛️ React, TypeScript, Vite, Bootstrap & Frontend Development
-              </li>
-              <li>🗄️ SQL & Relational Databases</li>
+              <li>⚛️ React, TypeScript, Vite & Frontend Development</li>
+              <li>🗄️ SQL & Relational Databases (MySQL)</li>
               <li>☁️ AWS Certified: Cloud Practitioner & AI Practitioner</li>
               <li>🧪 Selenium, JUnit, Postman, Swagger & Automated Testing</li>
               <li>🔧 Git, GitHub, Vercel & Agile Development</li>
-              <li>🤖 GitHub Copilot & ChatGPT</li>
+              <li>🤖 AI Development Tools (Copilot & ChatGPT)</li>
             </ul>
           </div>
         </div>
