@@ -54,6 +54,19 @@ Current highlights include:
 
 ## Featured Projects
 
+### FinTrack
+
+A production-deployed personal finance application built with Java, Spring Boot, React, TypeScript, and MySQL featuring:
+
+- Secure JWT authentication
+- User-scoped financial data
+- Transaction management, filtering, sorting, and pagination
+- Monthly budget management and spending tracking
+- Financial analytics and responsive dashboard visualizations
+- Automated backend and frontend testing
+- Swagger/OpenAPI documentation
+- Vercel, Railway, and MySQL production deployment
+
 ### TaskFlow
 
 A rule-based Kanban board built with React, TypeScript, and Vite featuring:
