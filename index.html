@@ -262,18 +262,19 @@
               <h3>TaskFlow</h3>
 
               <p>
-                A rule-based Kanban board built with React, TypeScript, and Vite
-                featuring drag-and-drop workflow management, search and
-                filtering, subtasks, workflow validation, custom confirmation
-                dialogs, keyboard accessibility, and LocalStorage persistence.
+                A frontend-only Kanban board built with React, TypeScript, and
+                Vite, with drag-and-drop and keyboard task movement, linked
+                subtasks, and validated browser storage. Versioned persistence
+                supports saved-board migration and recovery.
               </p>
 
               <ul class="project-highlights">
-                <li>Four-stage rule-based workflow</li>
-                <li>Search and multi-filtering</li>
-                <li>Subtask checklist management</li>
-                <li>Custom confirmation and notification systems</li>
+                <li>Four-stage workflow with capacity limits</li>
+                <li>Priority and independent Manual ordering</li>
+                <li>Combined search and filters</li>
+                <li>Linked subtasks and parent-completion guards</li>
                 <li>Responsive and keyboard-accessible interface</li>
+                <li>Automated Vitest and Playwright regression tests</li>
               </ul>
 
               <div class="project-tags" aria-label="TaskFlow technologies">
@@ -282,6 +283,8 @@
                 <span>Vite</span>
                 <span>CSS</span>
                 <span>@dnd-kit</span>
+                <span>Vitest</span>
+                <span>Playwright</span>
               </div>
 
               <div class="button-group">
