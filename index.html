@@ -150,7 +150,7 @@
             <div class="featured-project-image">
               <img
                 src="assets/images/fintrack-dashboard.png"
-                alt="Screenshot of the FinTrack dashboard displaying financial summaries, recent transactions, and budget analytics"
+                alt="FinTrack v1.4 dashboard with sidebar navigation, financial summaries, recent transactions with category icons, spending by category, and monthly budget cards"
                 class="project-img"
               />
             </div>
@@ -163,19 +163,21 @@
               <p>
                 A production-deployed personal finance application built with
                 Java, Spring Boot, React, TypeScript, and MySQL. FinTrack
-                provides secure, user-scoped transaction and budget management
-                with financial analytics and responsive dashboard
-                visualizations.
+                provides secure, user-scoped transaction, budget, and category
+                management with financial analytics and a responsive dashboard,
+                deployed across Vercel and Railway.
               </p>
 
               <ul class="project-highlights">
-                <li>JWT authentication and user-owned financial data</li>
+                <li>Short-lived JWTs with rotating refresh-token sessions</li>
                 <li>Transaction CRUD, filtering, sorting, and pagination</li>
                 <li>
-                  Monthly budgets with spending analytics and status tracking
+                  Monthly budgets and custom categories with spending analytics
                 </li>
-                <li>Responsive financial dashboard powered by Recharts</li>
-                <li>189 automated tests across the backend and frontend</li>
+                <li>Profile photos via Cloudinary and uptime monitoring</li>
+                <li>
+                  2,300+ automated tests, including MySQL integration tests
+                </li>
               </ul>
 
               <div class="project-tags" aria-label="FinTrack technologies">
@@ -184,7 +186,9 @@
                 <span>React</span>
                 <span>TypeScript</span>
                 <span>MySQL</span>
+                <span>Flyway</span>
                 <span>JWT</span>
+                <span>Testcontainers</span>
               </div>
 
               <div class="button-group">
@@ -241,7 +245,28 @@
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original.svg"
                   alt="Railway logo"
                   title="Railway"
-                  class="tech-icon-img"
+                  class="tech-icon-img railway-icon"
+                />
+
+                <img
+                  src="assets/logos/vercel.svg"
+                  alt="Vercel logo"
+                  title="Vercel"
+                  class="tech-icon-img mono-icon"
+                />
+
+                <img
+                  src="assets/logos/cloudinary.svg"
+                  alt="Cloudinary logo"
+                  title="Cloudinary"
+                  class="tech-icon-img cloudinary-icon"
+                />
+
+                <img
+                  src="assets/logos/betterstack.svg"
+                  alt="Better Stack logo"
+                  title="Better Stack"
+                  class="tech-icon-img mono-icon"
                 />
               </div>
             </div>
@@ -458,7 +483,7 @@
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original.svg"
                   alt="Railway logo"
                   title="Railway"
-                  class="tech-icon-img"
+                  class="tech-icon-img railway-icon"
                 />
               </div>
             </div>

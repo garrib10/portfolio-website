@@ -679,6 +679,21 @@ body.dark-mode .tech-icons .fa-react {
   transform: scale(1.15);
 }
 
+/* The Railway devicon is white; make it black on the light theme so it stays visible. */
+body:not(.dark-mode) .tech-icons .railway-icon {
+  filter: invert(1);
+}
+
+/* Black single-color logos (Vercel, Better Stack) turn white on the dark theme. */
+body.dark-mode .tech-icons .mono-icon {
+  filter: invert(1);
+}
+
+/* Cloudinary's brand blue is too dark on the dark theme; lighten it. */
+body.dark-mode .tech-icons .cloudinary-icon {
+  filter: brightness(1.8);
+}
+
 /* ===========================
    Experience
 =========================== */
