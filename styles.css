@@ -646,6 +646,10 @@ section + section:not(.highlights-section) {
   transform: scale(1.12);
 }
 
+body.dark-mode .vercel-icon {
+  filter: invert(1);
+}
+
 .tech-icons .fa-html5 {
   color: #e34f26;
 }
