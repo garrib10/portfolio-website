@@ -58,12 +58,12 @@ Current highlights include:
 
 A production-deployed personal finance application built with Java, Spring Boot, React, TypeScript, and MySQL featuring:
 
-- Secure JWT authentication
-- User-scoped financial data
+- Short-lived JWTs with rotating refresh-token sessions and user-scoped financial data
 - Transaction management, filtering, sorting, and pagination
-- Monthly budget management and spending tracking
-- Financial analytics and responsive dashboard visualizations
-- Automated backend and frontend testing
+- Monthly budgets and custom categories with spending analytics
+- Financial analytics and a responsive dashboard
+- Profile photos via Cloudinary and uptime monitoring with Better Stack
+- 2,300+ automated backend and frontend tests, including MySQL integration tests with Testcontainers
 - Swagger/OpenAPI documentation
 - Vercel, Railway, and MySQL production deployment
 
