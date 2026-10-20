@@ -69,13 +69,16 @@ A production-deployed personal finance application built with Java, Spring Boot,
 
 ### TaskFlow
 
-A rule-based Kanban board built with React, TypeScript, and Vite featuring:
+A frontend-only Kanban board built with React, TypeScript, and Vite featuring:
 
-- Drag-and-drop workflow management
-- Search and filtering
-- Workflow validation
-- Keyboard accessibility
-- LocalStorage persistence
+- Four-stage workflow with capacity limits and parent-completion guards
+- Drag-and-drop and keyboard task movement
+- Independent Priority and Manual ordering
+- Combined search and filtering
+- Linked parent and child tasks with completion progress
+- Responsive task details and guarded editing
+- Versioned LocalStorage persistence, migration, and recovery
+- Automated unit, integration, and browser regression tests with Vitest and Playwright
 
 ### Job Search Manager API
 
