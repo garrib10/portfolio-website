@@ -613,9 +613,10 @@ section + section:not(.highlights-section) {
 
 .tech-icons {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  gap: 0.65rem;
+  gap: 0.5rem 0.65rem;
 
   min-height: 28px;
   margin-top: 0.35rem;
@@ -687,6 +688,11 @@ body:not(.dark-mode) .tech-icons .railway-icon {
 /* Black single-color logos (Vercel, Better Stack) turn white on the dark theme. */
 body.dark-mode .tech-icons .mono-icon {
   filter: invert(1);
+}
+
+/* MySQL's dark teal dolphin is nearly invisible on the dark theme; lighten it. */
+body.dark-mode .tech-icons .mysql-icon {
+  filter: brightness(2.2);
 }
 
 /* Cloudinary's brand blue is too dark on the dark theme; lighten it. */
