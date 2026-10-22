@@ -1,5 +1,2 @@
- resume/Brian Garrity's Resume.pdf
-# Ignore the resume file
-*.pdf
-# Ignore the resume file in the resume directory
+# macOS metadata
 .DS_Store
