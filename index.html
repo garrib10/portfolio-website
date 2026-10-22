@@ -109,7 +109,7 @@
       <section class="highlights-section" aria-label="Professional highlights">
         <div class="highlights-grid">
           <div class="highlight-item">
-            <strong>2+ Years</strong>
+            <strong>2.5 Years</strong>
             <span>Professional Experience</span>
           </div>
 
@@ -119,13 +119,13 @@
           </div>
 
           <div class="highlight-item">
-            <strong>4</strong>
-            <span>Featured Projects</span>
+            <strong>3 Live Apps</strong>
+            <span>Deployed on Vercel & Railway</span>
           </div>
 
           <div class="highlight-item">
-            <strong>Full Stack</strong>
-            <span>Frontend, Backend & Testing</span>
+            <strong>QA Automation</strong>
+            <span>Selenium, Playwright & JUnit</span>
           </div>
         </div>
       </section>
@@ -286,6 +286,115 @@
             </div>
           </article>
           <!-- =========================
+     FinTrack Selenium Automation Suite
+========================== -->
+
+          <article class="featured-project">
+            <div class="featured-project-image">
+              <img
+                src="assets/images/fintrack-selenium-regression.png"
+                alt="DashboardTest source code beside the v1.1.0 GitHub Actions run of the FinTrack Selenium suite: 68 tests passed, 0 failures"
+                class="project-img"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="featured-project-content">
+              <p class="project-label">Test Automation / QA Engineering</p>
+
+              <h3>FinTrack Selenium Automation Suite</h3>
+
+              <p>
+                A standalone end-to-end regression suite for the deployed
+                FinTrack application, built with Java, Selenium WebDriver, JUnit
+                5, and Maven. Page objects, explicit waits, and run-specific test
+                data keep it reliable against production, and read-only checks
+                run automatically in GitHub Actions.
+              </p>
+
+              <ul class="project-highlights">
+                <li>
+                  16 browser test classes covering authentication, transactions,
+                  budgets, categories, and the dashboard
+                </li>
+                <li>Page Object Model with explicit-wait synchronization</li>
+                <li>
+                  Read-only and mutating tests with run-specific data and cleanup
+                </li>
+                <li>Headed and headless Chrome, plus framework unit tests</li>
+                <li>GitHub Actions, CodeQL, and automatic failure evidence</li>
+              </ul>
+
+              <div
+                class="project-tags"
+                aria-label="FinTrack Selenium Automation Suite technologies"
+              >
+                <span>Java</span>
+                <span>Selenium</span>
+                <span>JUnit 5</span>
+                <span>Maven</span>
+                <span>GitHub Actions</span>
+              </div>
+
+              <div class="button-group">
+                <a
+                  href="https://github.com/garrib10/fintrack-selenium-automation"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+
+                <a
+                  href="https://github.com/garrib10/fintrack-selenium-automation/releases/tag/v1.1.0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="secondary-project-button"
+                >
+                  <i class="fas fa-tag" aria-hidden="true"></i>
+                  v1.1.0 Release
+                </a>
+              </div>
+
+              <div
+                class="tech-icons"
+                aria-label="FinTrack Selenium Automation Suite technology logos"
+              >
+                <i class="fab fa-java" title="Java" aria-label="Java"></i>
+
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg"
+                  alt="Selenium logo"
+                  title="Selenium"
+                  class="tech-icon-img"
+                />
+
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg"
+                  alt="JUnit logo"
+                  title="JUnit 5"
+                  class="tech-icon-img"
+                />
+
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg"
+                  alt="Maven logo"
+                  title="Maven"
+                  class="tech-icon-img"
+                />
+
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
+                  alt="GitHub Actions logo"
+                  title="GitHub Actions"
+                  class="tech-icon-img"
+                />
+              </div>
+            </div>
+          </article>
+
+          <!-- =========================
          Task Flow Kanban Board
     ========================== -->
           <article class="featured-project">
@@ -414,7 +523,7 @@
               <p>
                 A production-deployed REST API built with FastAPI, SQLAlchemy,
                 and MySQL for tracking a job search: companies, applications,
-                interviews, and follow-up tasks. Each user's records are isolated
+                interviews, and follow-up tasks. Each user’s records are isolated
                 behind JWT authentication, schema changes run through Alembic
                 migrations, and every pull request runs the test suite against
                 MySQL before deploying to Railway.
@@ -515,114 +624,6 @@
             </div>
           </article>
 
-          <!-- =========================
-     FinTrack Selenium Automation Suite
-========================== -->
-
-          <article class="featured-project">
-            <div class="featured-project-image">
-              <img
-                src="assets/images/fintrack-selenium-regression.png"
-                alt="DashboardTest source code beside the v1.1.0 GitHub Actions run of the FinTrack Selenium suite: 68 tests passed, 0 failures"
-                class="project-img"
-                loading="lazy"
-              />
-            </div>
-
-            <div class="featured-project-content">
-              <p class="project-label">Test Automation / QA Engineering</p>
-
-              <h3>FinTrack Selenium Automation Suite</h3>
-
-              <p>
-                A standalone end-to-end regression suite for the deployed
-                FinTrack application, built with Java, Selenium WebDriver, JUnit
-                5, and Maven. Page objects, explicit waits, and run-specific test
-                data keep it reliable against production, and read-only checks
-                run automatically in GitHub Actions.
-              </p>
-
-              <ul class="project-highlights">
-                <li>
-                  16 browser test classes covering authentication, transactions,
-                  budgets, categories, and the dashboard
-                </li>
-                <li>Page Object Model with explicit-wait synchronization</li>
-                <li>
-                  Read-only and mutating tests with run-specific data and cleanup
-                </li>
-                <li>Headed and headless Chrome, plus framework unit tests</li>
-                <li>GitHub Actions, CodeQL, and automatic failure evidence</li>
-              </ul>
-
-              <div
-                class="project-tags"
-                aria-label="FinTrack Selenium Automation Suite technologies"
-              >
-                <span>Java</span>
-                <span>Selenium</span>
-                <span>JUnit 5</span>
-                <span>Maven</span>
-                <span>GitHub Actions</span>
-              </div>
-
-              <div class="button-group">
-                <a
-                  href="https://github.com/garrib10/fintrack-selenium-automation"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i class="fab fa-github" aria-hidden="true"></i>
-                  GitHub
-                </a>
-
-                <a
-                  href="https://github.com/garrib10/fintrack-selenium-automation/releases/tag/v1.1.0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="secondary-project-button"
-                >
-                  <i class="fas fa-tag" aria-hidden="true"></i>
-                  v1.1.0 Release
-                </a>
-              </div>
-
-              <div
-                class="tech-icons"
-                aria-label="FinTrack Selenium Automation Suite technology logos"
-              >
-                <i class="fab fa-java" title="Java" aria-label="Java"></i>
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg"
-                  alt="Selenium logo"
-                  title="Selenium"
-                  class="tech-icon-img"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg"
-                  alt="JUnit logo"
-                  title="JUnit 5"
-                  class="tech-icon-img"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg"
-                  alt="Maven logo"
-                  title="Maven"
-                  class="tech-icon-img"
-                />
-
-                <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
-                  alt="GitHub Actions logo"
-                  title="GitHub Actions"
-                  class="tech-icon-img"
-                />
-              </div>
-            </div>
-          </article>
         </div>
       </section>
 
@@ -799,7 +800,7 @@
               <h3>JPMorgan Chase & Co.</h3>
             </div>
 
-            <p class="experience-duration">2+ Years</p>
+            <p class="experience-duration">Apr 2022 – Oct 2024 · 2.5 years</p>
           </div>
 
           <ul>
@@ -811,6 +812,10 @@
             <li>
               Improved automated testing workflows using Selenium, JUnit,
               Postman, and Swagger.
+            </li>
+            <li>
+              During a QA/QE rotation, migrated legacy test scripts to a new
+              testing framework and built test scenarios for scheduled releases.
             </li>
             <li>
               Collaborated with engineers, product partners, and stakeholders
@@ -844,14 +849,14 @@
             <p>
               Hi! I’m <strong>Brian Garrity</strong>, a full-stack software
               engineer with over two years of experience working across Agile
-              teams at a leading U.S. bank. I've contributed to high-impact
+              teams at JPMorgan Chase. I’ve contributed to high-impact
               features such as integrating PayPal and Venmo into commercial
               platforms, building custom SMS and email notification systems, and
               improving automated testing workflows.
             </p>
 
             <p>
-              I'm passionate about building clean, maintainable software and
+              I’m passionate about building clean, maintainable software and
               solving real-world problems through thoughtful application design.
               I enjoy building applications across the full stack using Java,
               TypeScript, Python, React, SQL, AWS, and modern development tools.
