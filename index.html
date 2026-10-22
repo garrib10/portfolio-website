@@ -400,7 +400,7 @@
             <div class="featured-project-image">
               <img
                 src="assets/images/job-search-manager-api.png"
-                alt="Screenshot of the Job Search Manager API Swagger documentation"
+                alt="Job Search Manager API v0.4.1 Swagger documentation with Companies, Applications, and Interviews groups and the Follow-ups endpoints"
                 class="project-img"
                 loading="lazy"
               />
@@ -412,19 +412,23 @@
               <h3>Job Search Manager API</h3>
 
               <p>
-                A production-ready REST API built with FastAPI, SQLAlchemy, and
-                MySQL for managing companies, job applications, interviews, and
-                secure user authentication. Features layered architecture, JWT
-                authentication, advanced search and filtering, and comprehensive
-                automated testing.
+                A production-deployed REST API built with FastAPI, SQLAlchemy,
+                and MySQL for tracking a job search: companies, applications,
+                interviews, and follow-up tasks. Each user's records are isolated
+                behind JWT authentication, schema changes run through Alembic
+                migrations, and every pull request runs the test suite against
+                MySQL before deploying to Railway.
               </p>
 
               <ul class="project-highlights">
-                <li>JWT authentication with secure password hashing</li>
-                <li>Company, application, and interview management</li>
+                <li>
+                  JWT authentication, Argon2 password hashing, and per-user data
+                  isolation
+                </li>
+                <li>Companies, applications, interviews, and follow-up tasks</li>
+                <li>Job-search summary with status and outcome counts</li>
                 <li>Search, filtering, sorting, and pagination</li>
-                <li>Layered architecture with SQLAlchemy ORM</li>
-                <li>70 automated tests with 98% code coverage</li>
+                <li>328 automated tests with 99% coverage, run against MySQL</li>
               </ul>
 
               <div
@@ -435,6 +439,7 @@
                 <span>FastAPI</span>
                 <span>MySQL</span>
                 <span>SQLAlchemy</span>
+                <span>Alembic</span>
                 <span>JWT</span>
                 <span>Pytest</span>
               </div>
@@ -518,7 +523,7 @@
             <div class="featured-project-image">
               <img
                 src="assets/images/fintrack-selenium-regression.png"
-                alt="GitHub Actions results showing the successful FinTrack Selenium regression suite"
+                alt="DashboardTest source code beside the v1.1.0 GitHub Actions run of the FinTrack Selenium suite: 68 tests passed, 0 failures"
                 class="project-img"
                 loading="lazy"
               />
@@ -532,18 +537,21 @@
               <p>
                 A standalone end-to-end regression suite for the deployed
                 FinTrack application, built with Java, Selenium WebDriver, JUnit
-                5, and Maven. The suite validates critical financial workflows
-                through reusable page objects, explicit synchronization, and
-                automated CI execution.
+                5, and Maven. Page objects, explicit waits, and run-specific test
+                data keep it reliable against production, and read-only checks
+                run automatically in GitHub Actions.
               </p>
 
               <ul class="project-highlights">
-                <li>22 automated tests across 11 test classes</li>
                 <li>
-                  Authentication, transaction, budget, and dashboard coverage
+                  16 browser test classes covering authentication, transactions,
+                  budgets, categories, and the dashboard
                 </li>
                 <li>Page Object Model with explicit-wait synchronization</li>
-                <li>Headed and headless Chrome execution</li>
+                <li>
+                  Read-only and mutating tests with run-specific data and cleanup
+                </li>
+                <li>Headed and headless Chrome, plus framework unit tests</li>
                 <li>GitHub Actions, CodeQL, and automatic failure evidence</li>
               </ul>
 
@@ -569,13 +577,13 @@
                 </a>
 
                 <a
-                  href="https://github.com/garrib10/fintrack-selenium-automation/releases/tag/v1.0.0"
+                  href="https://github.com/garrib10/fintrack-selenium-automation/releases/tag/v1.1.0"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="secondary-project-button"
                 >
                   <i class="fas fa-tag" aria-hidden="true"></i>
-                  v1.0.0 Release
+                  v1.1.0 Release
                 </a>
               </div>
 
@@ -642,9 +650,9 @@
             />
 
             <p>
-              A movie search application that uses APIs to display results with
-              user interaction features. Built using HTML, CSS, JavaScript,
-              jQuery, and the Foundation framework.
+              A team-built movie search application that uses APIs to display
+              results with user interaction features. Built using HTML, CSS,
+              JavaScript, jQuery, and the Foundation framework.
             </p>
 
             <div class="button-group">
