@@ -89,7 +89,7 @@ function updateActiveNavigationLink() {
     link.classList.toggle("active", isActive);
 
     if (isActive) {
-      link.setAttribute("aria-current", "page");
+      link.setAttribute("aria-current", "true");
     } else {
       link.removeAttribute("aria-current");
     }

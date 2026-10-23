@@ -41,8 +41,12 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <nav class="site-nav" aria-label="Primary navigation">
-      <a href="#home" class="nav-brand">BG</a>
+      <a href="#home" class="nav-brand"
+        >BG<span class="visually-hidden">, Brian Garrity, home</span></a
+      >
 
       <div class="nav-links">
         <a href="#home" class="tab-link">Home</a>
@@ -66,7 +70,7 @@
       </button>
     </nav>
 
-    <main>
+    <main id="main" tabindex="-1">
       <section id="home" class="hero">
         <div class="hero-overlay" aria-hidden="true"></div>
 
@@ -173,7 +177,7 @@
                 </li>
               </ul>
 
-              <div class="project-tags" aria-label="FinTrack technologies">
+              <div class="project-tags">
                 <span>Java</span>
                 <span>Spring Boot</span>
                 <span>React</span>
@@ -191,7 +195,7 @@
                   rel="noopener noreferrer"
                 >
                   <svg class="icon fa-arrow-up-right-from-square" viewBox="0 0 512 512" aria-hidden="true"><use href="assets/icons/icons.svg#arrow-up-right-from-square"></use></svg>
-                  Live Demo
+                  Live Demo<span class="visually-hidden"> (FinTrack)</span>
                 </a>
 
                 <a
@@ -201,11 +205,11 @@
                   class="secondary-project-button"
                 >
                   <svg class="icon fa-github" viewBox="0 0 496 512" aria-hidden="true"><use href="assets/icons/icons.svg#github"></use></svg>
-                  GitHub
+                  GitHub<span class="visually-hidden"> (FinTrack)</span>
                 </a>
               </div>
 
-              <div class="tech-icons" aria-label="FinTrack technology logos">
+              <div class="tech-icons" aria-hidden="true">
                 <svg class="icon fa-java" viewBox="0 0 384 512" role="img" aria-label="Java"><title>Java</title><use href="assets/icons/icons.svg#java"></use></svg>
 
                 <img
@@ -215,12 +219,7 @@
                   class="tech-icon-img"
                 />
 
-                <img
-                  src="assets/logos/mysql.svg"
-                  alt="MySQL logo"
-                  title="MySQL"
-                  class="tech-icon-img mysql-icon"
-                />
+                <svg class="icon icon-mysql" viewBox="0 0 25.6 25.6" role="img" aria-label="MySQL"><title>MySQL</title><use href="assets/icons/icons.svg#mysql"></use></svg>
 
                 <svg class="icon fa-react" viewBox="0 0 512 512" role="img" aria-label="React"><title>React</title><use href="assets/icons/icons.svg#react"></use></svg>
 
@@ -319,10 +318,7 @@
                 <li>GitHub Actions, CodeQL, and automatic failure evidence</li>
               </ul>
 
-              <div
-                class="project-tags"
-                aria-label="FinTrack Selenium Automation Suite technologies"
-              >
+              <div class="project-tags">
                 <span>Java</span>
                 <span>Selenium</span>
                 <span>JUnit 5</span>
@@ -337,7 +333,7 @@
                   rel="noopener noreferrer"
                 >
                   <svg class="icon fa-github" viewBox="0 0 496 512" aria-hidden="true"><use href="assets/icons/icons.svg#github"></use></svg>
-                  GitHub
+                  GitHub<span class="visually-hidden"> (FinTrack Selenium Automation Suite)</span>
                 </a>
 
                 <a
@@ -347,14 +343,11 @@
                   class="secondary-project-button"
                 >
                   <svg class="icon fa-tag" viewBox="0 0 448 512" aria-hidden="true"><use href="assets/icons/icons.svg#tag"></use></svg>
-                  v1.1.0 Release
+                  v1.1.0 Release<span class="visually-hidden"> (FinTrack Selenium Automation Suite)</span>
                 </a>
               </div>
 
-              <div
-                class="tech-icons"
-                aria-label="FinTrack Selenium Automation Suite technology logos"
-              >
+              <div class="tech-icons" aria-hidden="true">
                 <svg class="icon fa-java" viewBox="0 0 384 512" role="img" aria-label="Java"><title>Java</title><use href="assets/icons/icons.svg#java"></use></svg>
 
                 <img
@@ -424,7 +417,7 @@
                 <li>Automated Vitest and Playwright regression tests</li>
               </ul>
 
-              <div class="project-tags" aria-label="TaskFlow technologies">
+              <div class="project-tags">
                 <span>React</span>
                 <span>TypeScript</span>
                 <span>Vite</span>
@@ -441,7 +434,7 @@
                   rel="noopener noreferrer"
                 >
                   <svg class="icon fa-arrow-up-right-from-square" viewBox="0 0 512 512" aria-hidden="true"><use href="assets/icons/icons.svg#arrow-up-right-from-square"></use></svg>
-                  Live Demo
+                  Live Demo<span class="visually-hidden"> (TaskFlow)</span>
                 </a>
 
                 <a
@@ -451,11 +444,11 @@
                   class="secondary-project-button"
                 >
                   <svg class="icon fa-github" viewBox="0 0 496 512" aria-hidden="true"><use href="assets/icons/icons.svg#github"></use></svg>
-                  GitHub
+                  GitHub<span class="visually-hidden"> (TaskFlow)</span>
                 </a>
               </div>
 
-              <div class="tech-icons" aria-label="TaskFlow technology logos">
+              <div class="tech-icons" aria-hidden="true">
                 <svg class="icon fa-react" viewBox="0 0 512 512" role="img" aria-label="React"><title>React</title><use href="assets/icons/icons.svg#react"></use></svg>
 
                 <img
@@ -540,10 +533,7 @@
                 <li>328 automated tests with 99% coverage, run against MySQL</li>
               </ul>
 
-              <div
-                class="project-tags"
-                aria-label="Job Search Manager API technologies"
-              >
+              <div class="project-tags">
                 <span>Python</span>
                 <span>FastAPI</span>
                 <span>MySQL</span>
@@ -560,7 +550,7 @@
                   rel="noopener noreferrer"
                 >
                   <svg class="icon fa-arrow-up-right-from-square" viewBox="0 0 512 512" aria-hidden="true"><use href="assets/icons/icons.svg#arrow-up-right-from-square"></use></svg>
-                  Explore API
+                  Explore API<span class="visually-hidden"> (Job Search Manager API)</span>
                 </a>
 
                 <a
@@ -570,14 +560,11 @@
                   class="secondary-project-button"
                 >
                   <svg class="icon fa-github" viewBox="0 0 496 512" aria-hidden="true"><use href="assets/icons/icons.svg#github"></use></svg>
-                  GitHub
+                  GitHub<span class="visually-hidden"> (Job Search Manager API)</span>
                 </a>
               </div>
 
-              <div
-                class="tech-icons"
-                aria-label="Job Search Manager API technology logos"
-              >
+              <div class="tech-icons" aria-hidden="true">
                 <img
                   src="assets/logos/python.svg"
                   alt="Python logo"
@@ -592,12 +579,7 @@
                   class="tech-icon-img"
                 />
 
-                <img
-                  src="assets/logos/mysql.svg"
-                  alt="MySQL logo"
-                  title="MySQL"
-                  class="tech-icon-img mysql-icon"
-                />
+                <svg class="icon icon-mysql" viewBox="0 0 25.6 25.6" role="img" aria-label="MySQL"><title>MySQL</title><use href="assets/icons/icons.svg#mysql"></use></svg>
 
                 <img
                   src="assets/logos/sqlalchemy.svg"
@@ -606,10 +588,10 @@
                   class="tech-icon-img sqlalchemy-icon"
                 />
                 <img
-                  src="assets/logos/pytest-wordmark.svg"
+                  src="assets/logos/pytest.svg"
                   alt="Pytest logo"
                   title="Pytest"
-                  class="tech-icon-img pytest-icon"
+                  class="tech-icon-img"
                 />
                 <img
                   src="assets/logos/railway.svg"
@@ -659,7 +641,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live Demo
+                Live Demo<span class="visually-hidden"> (Box-Office Media)</span>
               </a>
 
               <a
@@ -668,7 +650,7 @@
                 rel="noopener noreferrer"
                 class="secondary-project-button"
               >
-                GitHub
+                GitHub<span class="visually-hidden"> (Box-Office Media)</span>
               </a>
             </div>
 
@@ -710,7 +692,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live Demo
+                Live Demo<span class="visually-hidden"> (Code Quiz)</span>
               </a>
 
               <a
@@ -719,7 +701,7 @@
                 rel="noopener noreferrer"
                 class="secondary-project-button"
               >
-                GitHub
+                GitHub<span class="visually-hidden"> (Code Quiz)</span>
               </a>
             </div>
 
@@ -755,7 +737,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live Demo
+                Live Demo<span class="visually-hidden"> (Work Day Scheduler)</span>
               </a>
 
               <a
@@ -764,7 +746,7 @@
                 rel="noopener noreferrer"
                 class="secondary-project-button"
               >
-                GitHub
+                GitHub<span class="visually-hidden"> (Work Day Scheduler)</span>
               </a>
             </div>
 
