@@ -590,6 +590,7 @@ section + section:not(.highlights-section) {
 
 .project-img {
   width: 100%;
+  height: auto;
   display: block;
   border: 1px solid var(--border);
   border-radius: 10px;
@@ -1125,6 +1126,13 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* In the two-column layout, center a lone last card instead of leaving a gap beside it. */
+  .project-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 0.75rem);
+  }
+
   .highlights-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1194,6 +1202,11 @@ footer p {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-card:last-child:nth-child(odd) {
+    width: auto;
+    justify-self: stretch;
   }
 
   .about-content {
