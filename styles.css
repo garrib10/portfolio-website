@@ -41,7 +41,6 @@ body {
   background: var(--background);
   color: var(--text);
   font-family:
-    "Poppins",
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
@@ -77,6 +76,23 @@ body.dark-mode {
 img {
   display: block;
   max-width: 100%;
+  vertical-align: middle;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Inline SVG icons from assets/icons/icons.svg; sized and colored like the text around them. */
+.icon {
+  display: inline-block;
+  width: auto;
+  height: 1em;
+  overflow: visible;
+  fill: currentColor;
+  vertical-align: -0.125em;
 }
 
 a {
@@ -93,6 +109,7 @@ p {
 h1,
 h2,
 h3 {
+  margin-bottom: 0.5rem;
   line-height: 1.2;
 }
 
@@ -443,6 +460,7 @@ section + section:not(.highlights-section) {
 }
 
 .featured-project-image img {
+  height: auto;
   aspect-ratio: 16 / 10;
   object-fit: contain;
   transition: transform 0.35s ease;
@@ -622,7 +640,7 @@ section + section:not(.highlights-section) {
   margin-top: 0.35rem;
 }
 
-.tech-icons i {
+.tech-icons .icon {
   font-size: 1.55rem;
   cursor: default;
   transition: transform 0.2s ease;
@@ -641,7 +659,7 @@ section + section:not(.highlights-section) {
     filter 0.2s ease;
 }
 
-.tech-icons i:hover,
+.tech-icons .icon:hover,
 .tech-icons img:hover {
   transform: scale(1.12);
 }

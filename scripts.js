@@ -1,5 +1,10 @@
 const DARK_MODE_KEY = "portfolio-dark-mode";
 
+const THEME_ICON_VIEWBOXES = {
+  moon: "0 0 384 512",
+  sun: "0 0 512 512",
+};
+
 function applySavedTheme() {
   const savedMode = localStorage.getItem(DARK_MODE_KEY);
 
@@ -30,7 +35,7 @@ function updateThemeButton(isDarkMode) {
     return;
   }
 
-  const icon = toggleButton.querySelector("i");
+  const icon = toggleButton.querySelector("svg");
   const label = toggleButton.querySelector("span");
 
   toggleButton.setAttribute(
@@ -39,7 +44,13 @@ function updateThemeButton(isDarkMode) {
   );
 
   if (icon) {
-    icon.className = isDarkMode ? "fas fa-sun" : "fas fa-moon";
+    const iconName = isDarkMode ? "sun" : "moon";
+
+    icon.setAttribute("class", `icon fa-${iconName}`);
+    icon.setAttribute("viewBox", THEME_ICON_VIEWBOXES[iconName]);
+    icon
+      .querySelector("use")
+      ?.setAttribute("href", `assets/icons/icons.svg#${iconName}`);
   }
 
   if (label) {

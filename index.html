@@ -36,18 +36,6 @@
     <meta name="msapplication-TileColor" content="#075985" />
 
     <link rel="preload" as="image" href="assets/images/hero-fireworks.webp" />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -73,7 +61,7 @@
       </div>
 
       <button class="toggle-btn" type="button" aria-label="Switch to dark mode">
-        <i class="fas fa-moon" aria-hidden="true"></i>
+        <svg class="icon fa-moon" viewBox="0 0 384 512" aria-hidden="true"><use href="assets/icons/icons.svg#moon"></use></svg>
         <span>Dark Mode</span>
       </button>
     </nav>
@@ -149,9 +137,14 @@
           <article class="featured-project">
             <div class="featured-project-image">
               <img
-                src="assets/images/fintrack-dashboard.png"
+                src="assets/images/fintrack-dashboard-1300.webp"
+                srcset="assets/images/fintrack-dashboard-650.webp 650w, assets/images/fintrack-dashboard-1300.webp 1300w"
+                sizes="(max-width: 960px) calc(100vw - 5rem), 644px"
+                width="1300"
+                height="813"
                 alt="FinTrack v1.4 dashboard with sidebar navigation, financial summaries, recent transactions with category icons, spending by category, and monthly budget cards"
                 class="project-img"
+                loading="lazy"
               />
             </div>
 
@@ -197,10 +190,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i
-                    class="fas fa-arrow-up-right-from-square"
-                    aria-hidden="true"
-                  ></i>
+                  <svg class="icon fa-arrow-up-right-from-square" viewBox="0 0 512 512" aria-hidden="true"><use href="assets/icons/icons.svg#arrow-up-right-from-square"></use></svg>
                   Live Demo
                 </a>
 
@@ -210,16 +200,16 @@
                   rel="noopener noreferrer"
                   class="secondary-project-button"
                 >
-                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <svg class="icon fa-github" viewBox="0 0 496 512" aria-hidden="true"><use href="assets/icons/icons.svg#github"></use></svg>
                   GitHub
                 </a>
               </div>
 
               <div class="tech-icons" aria-label="FinTrack technology logos">
-                <i class="fab fa-java" title="Java" aria-label="Java"></i>
+                <svg class="icon fa-java" viewBox="0 0 384 512" role="img" aria-label="Java"><title>Java</title><use href="assets/icons/icons.svg#java"></use></svg>
 
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+                  src="assets/logos/spring.svg"
                   alt="Spring Boot logo"
                   title="Spring Boot"
                   class="tech-icon-img"
@@ -232,7 +222,7 @@
                   class="tech-icon-img mysql-icon"
                 />
 
-                <i class="fab fa-react" title="React" aria-label="React"></i>
+                <svg class="icon fa-react" viewBox="0 0 512 512" role="img" aria-label="React"><title>React</title><use href="assets/icons/icons.svg#react"></use></svg>
 
                 <img
                   src="assets/logos/typescript.svg"
@@ -256,7 +246,7 @@
                 />
 
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original.svg"
+                  src="assets/logos/railway.svg"
                   alt="Railway logo"
                   title="Railway"
                   class="tech-icon-img railway-icon"
@@ -292,7 +282,11 @@
           <article class="featured-project">
             <div class="featured-project-image">
               <img
-                src="assets/images/fintrack-selenium-regression.png"
+                src="assets/images/fintrack-selenium-regression-1300.webp"
+                srcset="assets/images/fintrack-selenium-regression-650.webp 650w, assets/images/fintrack-selenium-regression-1300.webp 1300w"
+                sizes="(max-width: 960px) calc(100vw - 5rem), 644px"
+                width="1300"
+                height="813"
                 alt="DashboardTest source code beside the v1.1.0 GitHub Actions run of the FinTrack Selenium suite: 68 tests passed, 0 failures"
                 class="project-img"
                 loading="lazy"
@@ -342,7 +336,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <svg class="icon fa-github" viewBox="0 0 496 512" aria-hidden="true"><use href="assets/icons/icons.svg#github"></use></svg>
                   GitHub
                 </a>
 
@@ -352,7 +346,7 @@
                   rel="noopener noreferrer"
                   class="secondary-project-button"
                 >
-                  <i class="fas fa-tag" aria-hidden="true"></i>
+                  <svg class="icon fa-tag" viewBox="0 0 448 512" aria-hidden="true"><use href="assets/icons/icons.svg#tag"></use></svg>
                   v1.1.0 Release
                 </a>
               </div>
@@ -361,31 +355,31 @@
                 class="tech-icons"
                 aria-label="FinTrack Selenium Automation Suite technology logos"
               >
-                <i class="fab fa-java" title="Java" aria-label="Java"></i>
+                <svg class="icon fa-java" viewBox="0 0 384 512" role="img" aria-label="Java"><title>Java</title><use href="assets/icons/icons.svg#java"></use></svg>
 
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/selenium/selenium-original.svg"
+                  src="assets/logos/selenium.svg"
                   alt="Selenium logo"
                   title="Selenium"
                   class="tech-icon-img"
                 />
 
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/junit/junit-original.svg"
+                  src="assets/logos/junit.svg"
                   alt="JUnit logo"
                   title="JUnit 5"
                   class="tech-icon-img"
                 />
 
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg"
+                  src="assets/logos/maven.svg"
                   alt="Maven logo"
                   title="Maven"
                   class="tech-icon-img"
                 />
 
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg"
+                  src="assets/logos/githubactions.svg"
                   alt="GitHub Actions logo"
                   title="GitHub Actions"
                   class="tech-icon-img"
@@ -400,9 +394,14 @@
           <article class="featured-project">
             <div class="featured-project-image">
               <img
-                src="assets/images/Taskflow.png"
+                src="assets/images/taskflow-1300.webp"
+                srcset="assets/images/taskflow-650.webp 650w, assets/images/taskflow-1300.webp 1300w"
+                sizes="(max-width: 960px) calc(100vw - 5rem), 644px"
+                width="1300"
+                height="813"
                 alt="TaskFlow v2.0 Kanban board with search and filters, four workflow stages, and parent-subtask progress"
                 class="project-img"
+                loading="lazy"
               />
             </div>
             <div class="featured-project-content">
@@ -441,10 +440,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i
-                    class="fas fa-arrow-up-right-from-square"
-                    aria-hidden="true"
-                  ></i>
+                  <svg class="icon fa-arrow-up-right-from-square" viewBox="0 0 512 512" aria-hidden="true"><use href="assets/icons/icons.svg#arrow-up-right-from-square"></use></svg>
                   Live Demo
                 </a>
 
@@ -454,13 +450,13 @@
                   rel="noopener noreferrer"
                   class="secondary-project-button"
                 >
-                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <svg class="icon fa-github" viewBox="0 0 496 512" aria-hidden="true"><use href="assets/icons/icons.svg#github"></use></svg>
                   GitHub
                 </a>
               </div>
 
               <div class="tech-icons" aria-label="TaskFlow technology logos">
-                <i class="fab fa-react" title="React" aria-label="React"></i>
+                <svg class="icon fa-react" viewBox="0 0 512 512" role="img" aria-label="React"><title>React</title><use href="assets/icons/icons.svg#react"></use></svg>
 
                 <img
                   src="assets/logos/typescript.svg"
@@ -476,7 +472,7 @@
                   class="tech-icon-img"
                 />
 
-                <i class="fab fa-css3-alt" title="CSS3" aria-label="CSS3"></i>
+                <svg class="icon fa-css3-alt" viewBox="0 0 384 512" role="img" aria-label="CSS3"><title>CSS3</title><use href="assets/icons/icons.svg#css3-alt"></use></svg>
 
                 <img
                   src="assets/logos/vitest.svg"
@@ -508,7 +504,11 @@
           <article class="featured-project">
             <div class="featured-project-image">
               <img
-                src="assets/images/job-search-manager-api.png"
+                src="assets/images/job-search-manager-api-1300.webp"
+                srcset="assets/images/job-search-manager-api-650.webp 650w, assets/images/job-search-manager-api-1300.webp 1300w"
+                sizes="(max-width: 960px) calc(100vw - 5rem), 644px"
+                width="1300"
+                height="813"
                 alt="Job Search Manager API v0.4.1 Swagger documentation with Companies, Applications, and Interviews groups and the Follow-ups endpoints"
                 class="project-img"
                 loading="lazy"
@@ -559,10 +559,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i
-                    class="fas fa-arrow-up-right-from-square"
-                    aria-hidden="true"
-                  ></i>
+                  <svg class="icon fa-arrow-up-right-from-square" viewBox="0 0 512 512" aria-hidden="true"><use href="assets/icons/icons.svg#arrow-up-right-from-square"></use></svg>
                   Explore API
                 </a>
 
@@ -572,7 +569,7 @@
                   rel="noopener noreferrer"
                   class="secondary-project-button"
                 >
-                  <i class="fab fa-github" aria-hidden="true"></i>
+                  <svg class="icon fa-github" viewBox="0 0 496 512" aria-hidden="true"><use href="assets/icons/icons.svg#github"></use></svg>
                   GitHub
                 </a>
               </div>
@@ -603,19 +600,19 @@
                 />
 
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlalchemy/sqlalchemy-original.svg"
+                  src="assets/logos/sqlalchemy.svg"
                   alt="SQLAlchemy logo"
                   title="SQLAlchemy"
                   class="tech-icon-img sqlalchemy-icon"
                 />
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytest/pytest-original-wordmark.svg"
+                  src="assets/logos/pytest-wordmark.svg"
                   alt="Pytest logo"
                   title="Pytest"
                   class="tech-icon-img pytest-icon"
                 />
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/railway/railway-original.svg"
+                  src="assets/logos/railway.svg"
                   alt="Railway logo"
                   title="Railway"
                   class="tech-icon-img railway-icon"
@@ -676,9 +673,9 @@
             </div>
 
             <div class="tech-icons">
-              <i class="fab fa-html5" title="HTML5"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
-              <i class="fab fa-js-square" title="JavaScript"></i>
+              <svg class="icon fa-html5" viewBox="0 0 384 512" role="img" aria-label="HTML5"><title>HTML5</title><use href="assets/icons/icons.svg#html5"></use></svg>
+              <svg class="icon fa-css3-alt" viewBox="0 0 384 512" role="img" aria-label="CSS3"><title>CSS3</title><use href="assets/icons/icons.svg#css3-alt"></use></svg>
+              <svg class="icon fa-js-square" viewBox="0 0 448 512" role="img" aria-label="JavaScript"><title>JavaScript</title><use href="assets/icons/icons.svg#square-js"></use></svg>
 
               <img
                 src="assets/logos/jquery.svg"
@@ -727,10 +724,10 @@
             </div>
 
             <div class="tech-icons">
-              <i class="fab fa-html5" title="HTML5"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
-              <i class="fab fa-js-square" title="JavaScript"></i>
-              <i class="fab fa-bootstrap" title="Bootstrap"></i>
+              <svg class="icon fa-html5" viewBox="0 0 384 512" role="img" aria-label="HTML5"><title>HTML5</title><use href="assets/icons/icons.svg#html5"></use></svg>
+              <svg class="icon fa-css3-alt" viewBox="0 0 384 512" role="img" aria-label="CSS3"><title>CSS3</title><use href="assets/icons/icons.svg#css3-alt"></use></svg>
+              <svg class="icon fa-js-square" viewBox="0 0 448 512" role="img" aria-label="JavaScript"><title>JavaScript</title><use href="assets/icons/icons.svg#square-js"></use></svg>
+              <svg class="icon fa-bootstrap" viewBox="0 0 576 512" role="img" aria-label="Bootstrap"><title>Bootstrap</title><use href="assets/icons/icons.svg#bootstrap"></use></svg>
             </div>
           </article>
 
@@ -772,9 +769,9 @@
             </div>
 
             <div class="tech-icons">
-              <i class="fab fa-html5" title="HTML5"></i>
-              <i class="fab fa-css3-alt" title="CSS3"></i>
-              <i class="fab fa-js-square" title="JavaScript"></i>
+              <svg class="icon fa-html5" viewBox="0 0 384 512" role="img" aria-label="HTML5"><title>HTML5</title><use href="assets/icons/icons.svg#html5"></use></svg>
+              <svg class="icon fa-css3-alt" viewBox="0 0 384 512" role="img" aria-label="CSS3"><title>CSS3</title><use href="assets/icons/icons.svg#css3-alt"></use></svg>
+              <svg class="icon fa-js-square" viewBox="0 0 448 512" role="img" aria-label="JavaScript"><title>JavaScript</title><use href="assets/icons/icons.svg#square-js"></use></svg>
 
               <img
                 src="assets/logos/moment.webp"
@@ -840,7 +837,7 @@
             src="assets/profile.webp"
             alt="Profile photo of Brian Garrity"
             width="180"
-            height="180"
+            height="238"
             loading="lazy"
             class="profile-pic"
           />
@@ -902,7 +899,7 @@
                 rel="noopener noreferrer"
                 aria-label="GitHub profile"
               >
-                <i class="fab fa-github" aria-hidden="true"></i>
+                <svg class="icon fa-github" viewBox="0 0 496 512" aria-hidden="true"><use href="assets/icons/icons.svg#github"></use></svg>
               </a>
 
               <a
@@ -911,7 +908,7 @@
                 rel="noopener noreferrer"
                 aria-label="LinkedIn profile"
               >
-                <i class="fab fa-linkedin" aria-hidden="true"></i>
+                <svg class="icon fa-linkedin" viewBox="0 0 448 512" aria-hidden="true"><use href="assets/icons/icons.svg#linkedin"></use></svg>
               </a>
 
               <a
@@ -921,7 +918,7 @@
                 aria-label="View resume"
                 title="View Resume"
               >
-                <i class="fas fa-file-download" aria-hidden="true"></i>
+                <svg class="icon fa-file-download" viewBox="0 0 384 512" aria-hidden="true"><use href="assets/icons/icons.svg#file-arrow-down"></use></svg>
               </a>
             </div>
           </div>
@@ -1013,7 +1010,6 @@
       <p>&copy; 2026 Brian Garrity. Built and maintained with care.</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
   </body>
 </html>
