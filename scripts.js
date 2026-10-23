@@ -5,8 +5,25 @@ const THEME_ICON_VIEWBOXES = {
   sun: "0 0 512 512",
 };
 
+// Storage can throw (private browsing, blocked site data); the theme still works without it.
+function readSavedTheme() {
+  try {
+    return localStorage.getItem(DARK_MODE_KEY);
+  } catch (error) {
+    return null;
+  }
+}
+
+function saveTheme(isDarkMode) {
+  try {
+    localStorage.setItem(DARK_MODE_KEY, isDarkMode ? "enabled" : "disabled");
+  } catch (error) {
+    // The choice simply won't persist across visits.
+  }
+}
+
 function applySavedTheme() {
-  const savedMode = localStorage.getItem(DARK_MODE_KEY);
+  const savedMode = readSavedTheme();
 
   const prefersDarkMode = window.matchMedia(
     "(prefers-color-scheme: dark)",
@@ -23,7 +40,7 @@ function applySavedTheme() {
 function toggleDarkMode() {
   const isDarkMode = document.body.classList.toggle("dark-mode");
 
-  localStorage.setItem(DARK_MODE_KEY, isDarkMode ? "enabled" : "disabled");
+  saveTheme(isDarkMode);
 
   updateThemeButton(isDarkMode);
 }
@@ -58,40 +75,119 @@ function updateThemeButton(isDarkMode) {
   }
 }
 
-function updateActiveNavigationLink() {
-  const navigationLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+function initActiveNavigation() {
+  const navigationLinks = Array.from(
+    document.querySelectorAll('.nav-links a[href^="#"]'),
+  );
 
-  const sections = Array.from(navigationLinks)
-    .map((link) => {
-      const href = link.getAttribute("href");
-
-      if (!href) {
-        return null;
-      }
-
-      return document.querySelector(href);
-    })
+  const sections = navigationLinks
+    .map((link) => document.querySelector(link.getAttribute("href")))
     .filter((section) => section !== null);
 
-  let activeSectionId = "";
+  let frameRequested = false;
 
-  sections.forEach((section) => {
-    const sectionTop = section.getBoundingClientRect().top;
+  function updateActiveNavigationLink() {
+    frameRequested = false;
 
-    if (sectionTop <= 140) {
-      activeSectionId = section.id;
-    }
-  });
+    let activeSectionId = "";
 
-  navigationLinks.forEach((link) => {
-    const isActive = link.getAttribute("href") === `#${activeSectionId}`;
+    sections.forEach((section) => {
+      const sectionTop = section.getBoundingClientRect().top;
 
-    link.classList.toggle("active", isActive);
+      if (sectionTop <= 140) {
+        activeSectionId = section.id;
+      }
+    });
 
-    if (isActive) {
-      link.setAttribute("aria-current", "true");
-    } else {
-      link.removeAttribute("aria-current");
+    navigationLinks.forEach((link) => {
+      const isActive = link.getAttribute("href") === `#${activeSectionId}`;
+
+      link.classList.toggle("active", isActive);
+
+      if (isActive) {
+        link.setAttribute("aria-current", "true");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  }
+
+  // Measure at most once per animation frame instead of on every scroll event.
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (!frameRequested) {
+        frameRequested = true;
+        window.requestAnimationFrame(updateActiveNavigationLink);
+      }
+    },
+    { passive: true },
+  );
+
+  updateActiveNavigationLink();
+}
+
+// Submit the contact form in the background and report the result inline.
+// Without JavaScript the form still posts to Formspree normally.
+function initContactForm() {
+  const form = document.querySelector(".contact-form");
+  const status = form?.querySelector(".form-status");
+  const submitButton = form?.querySelector('button[type="submit"]');
+
+  if (!form || !status || !submitButton) {
+    return;
+  }
+
+  const defaultButtonText = submitButton.textContent;
+
+  function showStatus(message, state) {
+    status.textContent = message;
+    status.dataset.state = state;
+  }
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending…";
+    showStatus("", "");
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        form.reset();
+        showStatus("Thanks! Your message was sent. I’ll get back to you soon.", "success");
+        return;
+      }
+
+      // Formspree returns e.g. { field: "email", message: "should be an email" }.
+      const data = await response.json().catch(() => ({}));
+      const details = Array.isArray(data.errors)
+        ? data.errors
+            .map(({ field, message }) => {
+              const text = field ? `${field} ${message}` : message;
+              return `${text.charAt(0).toUpperCase()}${text.slice(1)}.`;
+            })
+            .join(" ")
+        : "";
+
+      showStatus(
+        `Sorry, your message couldn’t be sent. ${details || "Please try again, or reach me on LinkedIn."}`,
+        "error",
+      );
+    } catch (error) {
+      showStatus(
+        "Sorry, your message couldn’t be sent. Please check your connection and try again, or reach me on LinkedIn.",
+        "error",
+      );
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = defaultButtonText;
     }
   });
 }
@@ -102,9 +198,6 @@ document.addEventListener("DOMContentLoaded", () => {
   themeToggleButton?.addEventListener("click", toggleDarkMode);
 
   applySavedTheme();
-  updateActiveNavigationLink();
-});
-
-window.addEventListener("scroll", updateActiveNavigationLink, {
-  passive: true,
+  initActiveNavigation();
+  initContactForm();
 });

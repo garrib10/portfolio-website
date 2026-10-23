@@ -20,6 +20,7 @@
   --border-strong: #cbd5e1;
 
   --success: #15803d;
+  --error: #b91c1c;
 
   --radius-small: 8px;
   --radius-medium: 14px;
@@ -74,6 +75,9 @@ body.dark-mode {
   --focus-ring: rgba(56, 189, 248, 0.25);
   --on-primary: #0f172a;
   --mysql-blue: #5cb8d6;
+
+  --success: #4ade80;
+  --error: #f87171;
 
   --border: #334155;
   --border-strong: #475569;
@@ -994,6 +998,29 @@ body.dark-mode .tech-icons .cloudinary-icon {
 .contact-form button:hover {
   background: var(--primary-hover);
   transform: translateY(-1px);
+}
+
+.contact-form button:disabled {
+  cursor: progress;
+  opacity: 0.7;
+  transform: none;
+}
+
+.form-status {
+  margin: 1rem 0 0;
+  font-weight: 600;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+.form-status[data-state="success"] {
+  color: var(--success);
+}
+
+.form-status[data-state="error"] {
+  color: var(--error);
 }
 
 /* ===========================
