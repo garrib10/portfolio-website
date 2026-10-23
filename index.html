@@ -20,7 +20,13 @@
 
     <meta
       property="og:image"
-      content="https://garrib10.github.io/portfolio-website/assets/profile.webp"
+      content="https://garrib10.github.io/portfolio-website/assets/images/og-card.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Brian Garrity, Full-Stack Software Engineer and Test Automation: Java, Spring Boot, React, TypeScript, Python, Selenium, Playwright"
     />
 
     <meta
@@ -29,6 +35,10 @@
     />
 
     <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="canonical" href="https://garrib10.github.io/portfolio-website/" />
 
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
 
@@ -41,6 +51,23 @@
   </head>
 
   <body>
+    <script>
+      // Apply the saved or system theme before the page paints, so dark-mode visitors never see a light flash.
+      (function () {
+        var saved = null;
+
+        try {
+          saved = localStorage.getItem("portfolio-dark-mode");
+        } catch (error) {}
+
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+        if (saved === "enabled" || (saved === null && prefersDark)) {
+          document.body.classList.add("dark-mode");
+        }
+      })();
+    </script>
+
     <a class="skip-link" href="#main">Skip to content</a>
 
     <nav class="site-nav" aria-label="Primary navigation">
@@ -916,23 +943,14 @@
               value="New contact form submission"
             />
 
+            <!-- Formspree honeypot: hidden from people, filled in by spam bots. -->
             <input
-              type="hidden"
-              name="_next"
-              value="https://garrib10.github.io/portfolio-website/"
+              type="text"
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+              hidden
             />
-
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_language" value="en" />
-
-            <input
-              type="hidden"
-              name="_autoresponse"
-              value="Thank you for your message! I will get back to you soon."
-            />
-
-            <input type="hidden" name="_format" value="plain" />
 
             <div class="form-field">
               <label for="name">Name</label>
@@ -983,6 +1001,8 @@
             </div>
 
             <button type="submit">Send Message</button>
+
+            <p class="form-status" role="status" aria-live="polite"></p>
           </form>
         </div>
       </section>
