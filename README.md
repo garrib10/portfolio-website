@@ -138,7 +138,9 @@ Then open http://localhost:8000. Any static server works (for example, VS Code L
 
 The site deploys to GitHub Pages from the `main` branch.
 
-Changes follow a `feature/fix branch → pull request → develop → local staging verification → release pull request → main` workflow. Branch rulesets prevent deleting `develop` and `main` or force-pushing to them, and `main` only accepts changes through pull requests.
+Changes follow a `feature/fix branch → pull request → develop → local staging verification → release pull request → main` workflow.
+
+GitHub Pages lets browsers cache files for 10 minutes, so `index.html` loads `styles.css` and `scripts.js` with a version query string (for example `styles.css?v=2026-10-23`). When a change touches either file, update the date in both links so visitors get the new page and its matching stylesheet and script together. Branch rulesets prevent deleting `develop` and `main` or force-pushing to them, and `main` only accepts changes through pull requests.
 
 ---
 
